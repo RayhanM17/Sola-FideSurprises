@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,700&display=swap");
+#mobile-nav {
+  display: none;
+}
+
+.btn-lg {
+  font-size: 20px;
+  letter-spacing: 3px;
+  padding: 0.6rem;
+  border: 0.02rem solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.btn-md {
+  font-family: 'Montserrat';
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 0.4rem;
+  border: 0.02rem solid #000;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+  line-height: 1.5;
+  background: #fff;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 78px;
+  text-align: center;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 59px;
+  color: #a9484d;
+  text-transform: uppercase;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.showcase {
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.showcase .nav {
+  width: 100%;
+}
+
+.showcase .nav .navlinks {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showcase .nav .navlinks .nav-link {
+  margin: 0 2rem;
+}
+
+.showcase .nav .navlinks .nav-link a {
+  color: #fff;
+}
+
+.showcase .nav .navlinks .nav-logo h1 {
+  font-size: 48px;
+  font-family: 'Source Serif Pro';
+  text-transform: uppercase;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+
+.showcase .nav .navlinks .nav-logo p {
+  font-size: 16px;
+  font-family: 'Source Serif Pro';
+  text-transform: uppercase;
+  margin-top: none;
+  font-weight: 400;
+}
+
+.showcase .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase .hero div {
+  margin-top: 12rem;
+  width: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase .hero div h1 {
+  margin-bottom: 8rem;
+}
+
+.ourport {
+  background: #fef3f4;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 3rem 1.5rem;
+}
+
+.ourport .port-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourport .port-left div {
+  margin-left: 3rem;
+}
+
+.ourport .port-left div h2 {
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.ourport .imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourport .imgs img {
+  height: 280px;
+  width: 215px;
+  margin: 0 3rem;
+}
+
+.whypurchase {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 6rem 1.5rem;
+}
+
+.whypurchase .why-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.whypurchase .why-left h3 {
+  text-align: left;
+  width: 400px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.whypurchase .why-left img {
+  width: 400px;
+  height: 520px;
+}
+
+.whypurchase .why-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.whypurchase .why-right p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.whypurchase .why-right a {
+  margin: 2rem 0;
+  width: 10rem;
+}
+
+.testimonials {
+  background: #fef3f4;
+  padding: 6rem 1.5rem;
+}
+
+.testimonials .test-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 6rem 1.5rem;
+}
+
+.testimonials .test-cards .test-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 390px;
+  background: #fff;
+  margin: 0 10rem;
+  border-radius: 3px;
+}
+
+.testimonials .test-cards .test-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+.testimonials .test-cards .test-card p {
+  text-align: center;
+  width: 10.6rem;
+  margin-bottom: 3rem;
+}
+
+.testimonials .test-cards .test-card .line {
+  height: 1px;
+  width: 58px;
+  background-color: #a9484d;
+}
+
+.testimonials .test-cards .test-card .person {
+  margin-bottom: 0;
+}
+
+.testimonials .test-cards .test-card .location {
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  width: 100%;
+}
+
+.question div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding: 6rem 1.5rem;
+}
+
+.question div p {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.footer {
+  height: 20vh;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  background: #000;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+.footer .copyright p {
+  display: inline;
+  font-size: 14px;
+  color: #fff;
+  margin: auto 0;
+}
+
+.footer .socials a i {
+  size: 8px;
+  padding: 4px 6px;
+  margin: 0 2px;
+  color: #000;
+  background: #fff;
+  border: 1px #fff solid;
+  border-radius: 100%;
+  cursor: pointer;
+}
