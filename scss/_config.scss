@@ -7,8 +7,6 @@ $primaryColor:#d68c8a;
   transition: all 0.5s ease-out;
 }
 
-
-
 // Set Text Color
 
 @function set-text-color($color) {
@@ -18,6 +16,7 @@ $primaryColor:#d68c8a;
     @return #fff;
   }
 }
+
 
 // Media Query Mixins
 

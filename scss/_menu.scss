@@ -1,3 +1,172 @@
-#mobile-nav{
-  display: none;
+@import 'config';
+
+// Menu Button
+
+.menu-btn{
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  @include easeOut;
+
+  .btn-line{
+    width: 28px;
+    height:3px;
+    margin: 0 0 5px 0;
+    background:set-text-color(#000);
+    @include easeOut;
+  }
+
+  // Rotate Into x with Menu Lines
+  &.close{
+    transform: rotate(180deg);
+
+    .btn-line{
+      // Line 1 - Rotate
+      &:nth-child(1){
+       transform:rotate(45deg) translate(5px, 5px);
+      }
+      // Line 2 - Hide
+      &:nth-child(2){
+        opacity: 0;
+      }
+      // Line 3 - Rotate
+      &:nth-child(3){
+        transform:rotate(-45deg) translate(7px, -6px);
+       }
+    }
+  }
+}
+
+
+// Menu Overlay
+
+.menu{
+  position:fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+
+  &.show{
+    visibility: visible;
+
+    body {
+      overflow-y: hidden;
+    }
+  }
+
+  &-branding, &-nav{
+    display: flex;
+    flex-flow:column wrap;
+    align-items:center ;
+    justify-content: center;
+    height: 100vh;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  &-nav {
+    margin: 0;
+    padding: 0;
+    background: darken($primaryColor, 5);
+    list-style:none;
+    transform: translate3d(0, -100%,0);
+    @include easeOut;
+
+    &.show{
+      // Slide in from top
+      transform: translate3d(0,0,0);
+    }
+  }
+
+  // Brading side
+  &-branding{
+    background: $primaryColor;
+    transform: translate3d(0, 100%,0);
+    @include easeOut;
+
+    &.show{
+      // Slide in from bottom
+      transform: translate3d(0,0,0);
+    }
+
+    .logo {
+      width: 300px;
+      height: 300px;
+      background:url('../img/logo-sm.png');
+      background-repeat: none;
+    }
+  }
+
+  .nav-item{
+    transform: translate3d(600px, 0, 0);
+    @include easeOut;
+
+    &.show{
+      // Slide in from right
+      transform: translate3d(0,0,0);
+    }
+
+    &.current > a{
+      color:$secondaryColor;
+    }
+  }
+
+  .nav-link{
+    display: inline-block;
+    position: relative;
+    font-size:30px;
+    text-transform: uppercase;
+    padding:1rem 0;
+    font-weight: 400;
+    color:set-text-color($primaryColor);
+    text-decoration: none;
+    @include easeOut;
+
+    &:hover{
+      color: $secondaryColor;
+    }
+  }
+
+}
+
+// Logo
+
+  .nav-logo{
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+      font-size: 48px;
+      font-family: 'Source Serif Pro';
+      text-transform: uppercase;
+      margin-bottom:0;
+      line-height: 20px;
+      color: #fff;
+    }
+
+    p{
+      font-size: 16px;
+      font-family: 'Source Serif Pro';
+      text-transform: uppercase;
+      margin-top:none;
+      font-weight: 400;
+      color:#fff;
+    }
+    
+  }
+
+
+// Delay each nav item slide by 0.1 sec
+
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
 }

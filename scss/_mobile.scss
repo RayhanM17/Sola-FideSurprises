@@ -1,0 +1,46 @@
+// wide screens
+
+@include mediaXl{
+  .nav-smallscreens{
+    display: none;
+  }
+}
+
+// Desktops & laptops
+
+@include mediaLg{
+  .nav-smallscreens{
+    display: none;
+  }
+  .nav-widescreens{
+    .navlinks{
+      font-size:14px;
+      .nav-logo{
+        h1{
+          font-size: 42px;
+        }
+  
+        p{
+          font-size: 14px;     
+        }
+        
+    }
+    }
+  }
+}
+
+// Tablets & small laptops
+
+@include mediaMd{
+  .nav-widescreens{
+    display: none;
+  }
+}
+
+// Smart Phones
+
+@include mediaSm{
+  .nav-widescreens{
+    display: none;
+  }
+}
