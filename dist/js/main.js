@@ -17,6 +17,7 @@ function toggleMenu() {
     menuNav.classList.add('show');
     menuBranding.classList.add('show');
     navItems.forEach(item => item.classList.add('show'));
+    document.body.style.position = 'fixed';
 
     //Set Menu State
     showMenu = true;
@@ -26,6 +27,7 @@ function toggleMenu() {
     menuNav.classList.remove('show');
     menuBranding.classList.remove('show');
     navItems.forEach(item => item.classList.remove('show'));
+    document.body.style.position = '';
 
     //Set Menu State
     showMenu = false;
