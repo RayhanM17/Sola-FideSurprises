@@ -9,6 +9,8 @@
 // Desktops & laptops
 
 @include mediaLg{
+
+  // Nav
   .nav-smallscreens{
     display: none;
   }
@@ -27,20 +29,117 @@
     }
     }
   }
+  .ourport{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .whypurchase{
+    margin-bottom: ;
+    .why-right{
+      margin-top: 7rem;
+      width: 90%;
+      margin-left: 2rem;
+    }
+  }
+
+
 }
 
 // Tablets & small laptops
 
 @include mediaMd{
+
   .nav-widescreens{
     display: none;
   }
+
+  .ourport{
+    display: flex;
+    @include center;
+    flex-direction: column;
+    margin-bottom: 4rem;
+
+    .port-left{
+      display: flex;
+      @include center;
+      flex-direction: column;
+      div{
+        display: flex;
+        @include center;
+        flex-direction: column;
+        margin-left:0;
+        h3{
+          text-align: inherit;
+        }
+        
+      }
+    }
+    .imgs{
+      margin-top:4rem;
+    }
+  }
+
+  .whypurchase{
+    display: flex;
+    @include center;
+    flex-direction: column;
+    .why-left{
+      h3{
+        text-align: center;
+      }
+      img{
+        margin-top: 4rem;
+      }
+    }
+    .why-right{
+      margin-top: 4rem;
+      align-items: center;
+      p{
+        text-align: center;
+      }
+    }
+  }
+
+
 }
 
 // Smart Phones
 
 @include mediaSm{
-  .nav-widescreens{
-    display: none;
+
+  //NAV
+    .nav-widescreens{
+      display: none;
+    }
+
+    .nav-smallscreens{
+      height: 30vh;
+      //Hamburger Menu
+      
+      //Logo
+      .nav-logo{
+        h1{
+          font-size: 30px;
+        }
+
+        p{
+          font-size: 10px;
+        }
+      }
+    }
+
+  // HERO
+  .hero{
+    div{
+      margin-top:0rem;
+      h1{
+      margin-bottom:0rem;
+      font-size:32px;
+      }
+      .btn-lg{
+        font-size:14px;
+      }
+    }
   }
+
 }
