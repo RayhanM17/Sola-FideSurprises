@@ -1,7 +1,6 @@
 {
   "name": "solafide",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
@@ -11,5 +10,14 @@
   "homepage": "https://RayhanM17.github.io/Sola-FideSurprises",
   "dependencies": {
     "gh-pages": "^3.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RayhanM17/Sola-FideSurprises.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RayhanM17/Sola-FideSurprises/issues"
+  },
+  "description": ""
 }

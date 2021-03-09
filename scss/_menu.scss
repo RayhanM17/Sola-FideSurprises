@@ -134,34 +134,6 @@
 
 }
 
-// Logo
-
-  .nav-logo{
-    list-style: none;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
-    h1{
-      font-size: 48px;
-      font-family: 'Source Serif Pro';
-      text-transform: uppercase;
-      margin-bottom:0;
-      line-height: 20px;
-      color: #fff;
-    }
-
-    p{
-      font-size: 16px;
-      font-family: 'Source Serif Pro';
-      text-transform: uppercase;
-      margin-top:none;
-      font-weight: 400;
-      color:#fff;
-    }
-    
-  }
-
 
 // Delay each nav item slide by 0.1 sec
 

@@ -7,6 +7,11 @@ $primaryColor:#d68c8a;
   transition: all 0.5s ease-out;
 }
 
+@mixin center {
+  align-items: center;
+  justify-content: center;
+}
+
 // Set Text Color
 
 @function set-text-color($color) {
