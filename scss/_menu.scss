@@ -6,7 +6,7 @@
   position: absolute;
   z-index: 3;
   right: 35px;
-  top: 35px;
+  top: 20px;
   cursor: pointer;
   @include easeOut;
 
@@ -146,3 +146,17 @@
     transition-delay: $x * 0.1s;
   }
 }
+
+// .showcase{
+//   .nav-smallscreens{
+//     .nav-logo{
+//       h1{
+//         font-size: 3rem;
+//       }
+//       p{
+//         font-size: 0.8rem;
+//         color:#000;
+//       }
+//     }
+//   }
+// }

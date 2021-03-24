@@ -21,7 +21,7 @@ h1{
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 78px;
   text-align: center;
 }
@@ -71,13 +71,13 @@ a {
     width: 100%;
     position: relative;
     .nav-logo{
+      margin-top: 2rem;
       list-style: none;
       display: flex;
-      justify-content:center;
-      align-items: center;
+      @include center;
       flex-direction: column;
       h1{
-        font-size: 48px;
+        font-size: 3rem;
         font-family: 'Source Serif Pro';
         text-transform: uppercase;
         margin-bottom:0;
@@ -86,7 +86,7 @@ a {
       }
     
       p{
-        font-size: 16px;
+        font-size: 1rem;
         font-family: 'Source Serif Pro';
         text-transform: uppercase;
         margin-top:none;
@@ -186,7 +186,7 @@ a {
   width: 100%;
  
 
-  .port-left{
+  &-left{
     display: flex;
     @include center;
     .container{
@@ -363,6 +363,9 @@ a {
       font-size:14px;
 	    color:#fff;
 	    margin: auto 0;
+      &:nth-child(odd){
+        
+      }
     }
   }
   .socials{

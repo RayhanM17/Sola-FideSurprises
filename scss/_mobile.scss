@@ -19,16 +19,16 @@
         font-size:14px;
 
       }
-      .nav-logo{
-        h1{
-          font-size: 42px;
-        }
+    //   .nav-logo{
+    //     h1{
+    //       font-size: 42px;
+    //     }
   
-        p{
-          font-size: 14px;     
-        }
+    //     p{
+    //       font-size: 14px;     
+    //     }
         
-    }
+    // }
     }
   }
   .ourport{
@@ -100,25 +100,102 @@
   .nav-widescreens{
     display: none;
   }
+
+
+
+  .hero{
+    .container{
+      h1{
+        font-size: 3rem;
+      }
+    }
+  }
   .ourport{
     grid-template-columns: 1fr;
+
+    &-left{
+      .container{
+        display: flex;
+        @include center;
+        flex-direction: column;
+        margin:3rem 0;
+      }
+    }
+
+    .imgs{
+      img{
+        margin:1.5rem 3rem;
+      }
+    }
+
   }
+
   .why{
     grid-template-columns: 1fr;
+    grid-gap:0;
+
     &-left{
       justify-self: center;
+      .container{
+        display: flex;
+        @include center;
+        flex-direction: column;
+        h3{
+          text-align: center;
+          margin-bottom: 3rem ;
+        }
+        .img{
+          display: none;
+        }
+      }
     }
+
     &-right{
       justify-self: center;
+      .container{
+        display: flex;
+        @include center;
+        flex-direction: column;
+        margin-top:0;
+        p{
+          text-align: center;
+          font-size:1rem;
+        }
+      }
     }
   }
+
   .testimonials{
+    display: flex;
+    @include center;
+    flex-direction: column;
+    .container{
+      display: flex;
+      @include center;
+      flex-direction: column;
+      h2{
+        margin-left:0;
+      }
+    }
     .test-cards{
       grid-template-columns: 1fr;
     }
   }
 
 
+
+  .footer{
+    @include center;
+    flex-direction: column;
+    .copyright{
+      // display: flex;
+      // @include center;
+      // flex-direction: column;
+      p{
+
+      }
+    }
+  }
 
 }
 
