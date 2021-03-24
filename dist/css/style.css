@@ -189,9 +189,14 @@ h2 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 59px;
   color: #a9484d;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 24px;
   text-transform: uppercase;
 }
 
@@ -243,7 +248,7 @@ a {
   font-family: 'Source Serif Pro';
   text-transform: uppercase;
   margin-bottom: 0;
-  line-height: 20px;
+  line-height: 1.25rem;
   color: #fff;
 }
 
@@ -368,8 +373,8 @@ a {
 }
 
 .ourport .imgs img {
-  height: 280px;
-  width: 215px;
+  height: 17.5rem;
+  width: 13.4375rem;
   margin: 1rem 3rem;
 }
 
@@ -400,8 +405,6 @@ a {
 .why-left .container h3 {
   text-align: left;
   width: 400px;
-  font-size: 24px;
-  text-transform: uppercase;
 }
 
 .why-left .container .img {
@@ -655,7 +658,6 @@ a {
   }
   .why-left .container h3 {
     text-align: center;
-    margin-bottom: 3rem;
   }
   .why-left .container .img {
     display: none;
@@ -673,6 +675,9 @@ a {
   .why-right .container p {
     text-align: center;
     font-size: 1rem;
+  }
+  .why-right .container .btn-md {
+    float: none;
   }
   .testimonials {
     display: flex;
@@ -697,32 +702,95 @@ a {
     justify-content: center;
     flex-direction: column;
   }
+  .footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer .copyright p {
+    margin: 1rem;
+  }
+  .footer .copyright .socials {
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
-  .nav-widescreens {
-    display: none;
+  .btn-lg {
+    font-size: 1rem;
   }
-  .nav-widescreens .nav-links {
-    margin: 0.5rem 0.5rem;
+  .btn-md {
+    font-size: 12.8px;
   }
-  .nav-smallscreens {
-    height: 30vh;
+  h1 {
+    font-size: 2rem;
   }
-  .nav-smallscreens .nav-logo h1 {
-    font-size: 30px;
+  h2 {
+    font-size: 1.8rem;
   }
-  .nav-smallscreens .nav-logo p {
-    font-size: 10px;
+  h3 {
+    font-size: 1.3rem;
   }
-  .hero div {
-    margin-top: 0rem;
+  .showcase .nav-smallscreens .nav-logo h1 {
+    font-size: 2rem;
+    line-height: 0.83rem;
   }
-  .hero div h1 {
-    margin-bottom: 0rem;
-    font-size: 32px;
+  .showcase .nav-smallscreens .nav-logo p {
+    font-size: 0.66rem;
   }
-  .hero div .btn-lg {
-    font-size: 14px;
+  .showcase .nav-smallscreens .menu-btn .btn-line {
+    width: 18px;
+    height: 2px;
+  }
+  .showcase .nav-smallscreens .menu-btn.close .btn-line {
+    width: 28px;
+    height: 3px;
+  }
+  .showcase .hero .container h1 {
+    font-size: 2rem;
+  }
+  .showcase .hero .container .btn-lg {
+    font-size: 1rem;
+  }
+  .ourport-left .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .ourport-left .container h2 {
+    text-align: center;
+  }
+  .ourport .imgs img {
+    height: 13.125rem;
+    width: 10.078125rem;
+  }
+  .why {
+    align-self: center;
+    justify-self: center;
+  }
+  .why-right .container p {
+    font-size: 0.8rem;
+  }
+  .testimonials .test-cards .test-card {
+    width: 187.5px;
+    height: 292.5px;
+  }
+  .testimonials .test-cards .test-card img {
+    width: 52.5px;
+    height: 52.5px;
+  }
+  .testimonials .test-cards .test-card p {
+    font-size: 0.8rem;
+  }
+  .testimonials .test-cards .test-card .line {
+    width: 43.5px;
+  }
+  .testimonials .test-cards .test-card .person {
+    font-size: 0.8rem;
+  }
+  .testimonials .test-cards .test-card .location {
+    font-size: 0.8rem;
   }
 }

@@ -142,7 +142,7 @@
         flex-direction: column;
         h3{
           text-align: center;
-          margin-bottom: 3rem ;
+          //margin-bottom: 3rem ;
         }
         .img{
           display: none;
@@ -160,6 +160,9 @@
         p{
           text-align: center;
           font-size:1rem;
+        }
+        .btn-md{
+          float: none;
         }
       }
     }
@@ -188,11 +191,14 @@
     @include center;
     flex-direction: column;
     .copyright{
-      // display: flex;
-      // @include center;
-      // flex-direction: column;
+     display: flex;
+     @include center;
+     flex-direction: column;
       p{
-
+        margin:1rem;
+      }
+      .socials{
+        margin-top: 1rem;
       }
     }
   }
@@ -203,40 +209,130 @@
 
 @include mediaSm{
 
-  //NAV
-    .nav-widescreens{
-      display: none;
-      .nav-links{
-        margin: 0.5rem 0.5rem;
-      }
-    }
+  .btn-lg{
+    font-size:1rem;
+  }
 
+  .btn-md{
+    font-size:12.8px;
+  }
+
+  h1{
+    font-size:2rem;
+  }
+
+  h2{
+    font-size:1.8rem;
+  }
+
+  h3{
+    font-size:1.3rem;
+  }
+
+  .showcase{
     .nav-smallscreens{
-      height: 30vh;
-      //Hamburger Menu
-      
-      //Logo
       .nav-logo{
         h1{
-          font-size: 30px;
+          font-size:2rem;
+          line-height: 0.83rem;
         }
-
         p{
-          font-size: 10px;
+          font-size:0.66rem;
+        }
+      }
+      .menu-btn{
+        .btn-line{
+          width:18px;
+          height:2px;
+        }
+        &.close{
+          .btn-line{
+            width:28px;
+            height: 3px;
+          }
         }
       }
     }
 
-  // HERO
-  .hero{
-    div{
-      margin-top:0rem;
-      h1{
-      margin-bottom:0rem;
-      font-size:32px;
+    .hero{
+      .container{
+        h1{
+          font-size:2rem;
+        }
+        .btn-lg{
+          font-size:1rem;
+        }
       }
-      .btn-lg{
-        font-size:14px;
+    }
+  }
+
+  .ourport{
+    &-left{
+      .container{
+        display: flex;
+        @include center;
+        flex-direction: column;
+        h2{
+          text-align: center;
+        }
+      }
+    }
+
+    .imgs{
+      img{
+        height:13.125rem;
+        width:10.078125rem;
+      }
+    }
+  }
+
+  .why{
+    align-self: center;
+    justify-self: center;
+    &-left{
+      .container{
+        
+        h3{
+          
+        }
+      }
+    }
+
+    &-right{
+     
+      .container{
+        
+        p{
+          font-size:0.8rem;
+        }
+        .btn-md{
+          
+        }
+      }
+    }
+  }
+
+  .testimonials{
+    .test-cards{
+      .test-card{
+        width:187.5px;
+        height:292.5px;
+        img{
+          width:52.5px;
+          height:52.5px;
+        }
+        p{
+          font-size:0.8rem;
+        }
+        .line{
+          width: 43.5px;
+        }
+        .person{
+          font-size:0.8rem;
+        }
+        .location{
+          font-size:0.8rem;
+        }
       }
     }
   }

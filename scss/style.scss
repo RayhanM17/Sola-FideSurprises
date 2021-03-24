@@ -30,10 +30,15 @@ h2{
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 59px;
   color:$secondaryColor;
   text-transform: uppercase;
+}
+
+h3{
+  font-size:24px;
+  text-transform:  uppercase;
 }
 
 a {
@@ -81,7 +86,7 @@ a {
         font-family: 'Source Serif Pro';
         text-transform: uppercase;
         margin-bottom:0;
-        line-height: 20px;
+        line-height: 1.25rem;
         color: #fff;
       }
     
@@ -203,8 +208,8 @@ a {
     @include center;
     flex-wrap: wrap;
     img{
-      height: 280px;
-      width: 215px;
+      height: 17.5rem;
+      width: 13.4375rem;
       margin: 1rem 3rem;
     }
   }
@@ -231,8 +236,6 @@ a {
       h3{
         text-align: left;
         width: 400px;
-        font-size:24px;
-        text-transform:  uppercase;
       }
       .img{
         width: 400px;
@@ -363,9 +366,6 @@ a {
       font-size:14px;
 	    color:#fff;
 	    margin: auto 0;
-      &:nth-child(odd){
-        
-      }
     }
   }
   .socials{
