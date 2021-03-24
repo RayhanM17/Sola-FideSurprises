@@ -320,7 +320,8 @@ a {
 }
 
 .showcase .hero .container {
-  width: 45%;
+  margin: 0;
+  width: 75%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -329,7 +330,7 @@ a {
 }
 
 .showcase .hero .container h1 {
-  margin-bottom: 7rem;
+  margin: 5rem 0;
 }
 
 .ourport {
@@ -349,6 +350,7 @@ a {
 }
 
 .ourport .port-left .container {
+  margin-left: 1.5rem;
   min-height: 13.2rem;
 }
 
@@ -376,7 +378,6 @@ a {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 8rem;
   padding: 4rem 1.5rem;
-  min-height: 80vh;
   width: 100%;
   overflow: hidden;
 }
@@ -402,9 +403,11 @@ a {
   text-transform: uppercase;
 }
 
-.why-left .container img {
+.why-left .container .img {
   width: 400px;
   height: 520px;
+  background-image: url("/dist/img/surprise4.jpg");
+  background-position: center;
 }
 
 .why-right {
@@ -415,7 +418,7 @@ a {
 
 .why-right .container {
   width: 60%;
-  margin: 0;
+  margin-top: 8rem;
   height: 520px;
 }
 
@@ -440,6 +443,10 @@ a {
 .testimonials .container {
   width: 100%;
   height: 20vh;
+}
+
+.testimonials .container h2 {
+  margin-left: 1.3rem;
 }
 
 .testimonials .test-cards {
@@ -558,20 +565,46 @@ a {
   .nav-smallscreens {
     display: none;
   }
-  .nav-widescreens .navlinks {
+  .nav-widescreens .nav-links .nav-link {
     font-size: 14px;
   }
-  .nav-widescreens .navlinks .nav-logo h1 {
+  .nav-widescreens .nav-links .nav-logo h1 {
     font-size: 42px;
   }
-  .nav-widescreens .navlinks .nav-logo p {
+  .nav-widescreens .nav-links .nav-logo p {
     font-size: 14px;
   }
   .ourport {
     grid-template-columns: 1fr 1fr;
   }
-  .why-right .container p:nth-child(2) {
-    display: none;
+  .why {
+    grid-gap: 3.2rem;
+  }
+  .why-right {
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .why-right .container {
+    margin-top: 8.45rem;
+    width: 70%;
+  }
+  .why-right .container p {
+    font-size: 14px;
+  }
+  .why-left {
+    justify-self: center;
+  }
+  .why-left .container {
+    margin-left: 4rem;
+  }
+  .why-left .container h3 {
+    font-size: 20px;
+    width: 90%;
+  }
+  .why-left .container .img {
+    width: 333px;
+    width: 90%;
   }
   .testimonials .test-cards {
     grid-template-columns: repeat(2, 1fr);

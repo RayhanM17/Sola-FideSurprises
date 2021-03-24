@@ -161,15 +161,15 @@ a {
     @include center;
     height: 75vh;
     .container{
-      //margin-top:12rem;
-      width: 45%;
+      margin: 0;
+      width: 75%;
       text-align: center;
       display: flex;
       flex-direction: column;
       @include center;
 
       h1{
-        margin-bottom:7rem;
+        margin:5rem 0;
       }
 
     }
@@ -190,11 +190,11 @@ a {
     display: flex;
     @include center;
     .container{
+      margin-left: 1.5rem;
       min-height: 13.2rem;
       h2{
         text-align: left;
-        margin-bottom: 4rem;
-        
+        margin-bottom: 4rem;   
       }
     }
   }
@@ -216,7 +216,6 @@ a {
   grid-template-columns:repeat(2, 1fr);
   grid-gap:8rem;
   padding: 4rem 1.5rem;
-  min-height: 80vh;
   width: 100%;
   overflow: hidden;
 
@@ -235,10 +234,11 @@ a {
         font-size:24px;
         text-transform:  uppercase;
       }
-      img{
+      .img{
         width: 400px;
         height:520px;
-
+        background-image: url('/dist/img/surprise4.jpg');
+        background-position: center;
       }
     }
   }
@@ -249,7 +249,7 @@ a {
     justify-self: flex-start;
     .container{
       width: 60%;
-      margin: 0;
+      margin-top: 8rem;
       height: 520px;
       p{
         font-size: 18px;
@@ -274,7 +274,7 @@ a {
     width: 100%;
     height: 20vh;
     h2{
-      
+      margin-left: 1.3rem;
     }
   }
 

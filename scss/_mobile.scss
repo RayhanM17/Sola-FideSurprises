@@ -9,14 +9,16 @@
 // Desktops & laptops
 
 @include mediaLg{
-
   // Nav
   .nav-smallscreens{
     display: none;
   }
   .nav-widescreens{
-    .navlinks{
-      font-size:14px;
+    .nav-links{
+      .nav-link{
+        font-size:14px;
+
+      }
       .nav-logo{
         h1{
           font-size: 42px;
@@ -34,14 +36,32 @@
   }
 
   .why{
+    grid-gap:3.2rem;
     &-right{
+      justify-self: center;
+      @include center;
       .container{
+        margin-top:8.45rem;
+        width: 70%;
         p{
-          &:nth-child(2){
-            display: none;
-          }
+          font-size: 14px;
         }
         
+      }
+    }
+
+    &-left{
+      justify-self: center;
+      .container{
+        margin-left:4rem;
+        h3{
+          font-size:20px;
+          width: 90%;
+        }
+        .img{
+          width:333px;
+          width: 90%;
+        }
       }
     }
   }
