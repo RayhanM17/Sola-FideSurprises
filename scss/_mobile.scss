@@ -102,14 +102,17 @@
   }
 
 
-
-  .hero{
-    .container{
-      h1{
-        font-size: 3rem;
+  .showcase{
+    .hero{
+      margin-top: 0rem;
+      .container{
+        h1{
+          font-size: 3rem;
+        }
       }
     }
   }
+
   .ourport{
     grid-template-columns: 1fr;
 

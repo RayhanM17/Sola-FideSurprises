@@ -164,14 +164,16 @@ a {
   .hero{
     display: flex;
     @include center;
-    height: 75vh;
+    //min-height: 14rem;
+    margin-top: 10rem;
     .container{
       margin: 0;
-      width: 75%;
+      width: 65%;
       text-align: center;
       display: flex;
       flex-direction: column;
       @include center;
+      min-height: 13.2rem;
 
       h1{
         margin:5rem 0;
