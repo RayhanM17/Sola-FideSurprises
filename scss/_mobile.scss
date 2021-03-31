@@ -58,7 +58,7 @@
           font-size:20px;
           width: 90%;
         }
-        .img{
+        .why-img{
           width:333px;
           width: 90%;
         }
@@ -135,7 +135,7 @@
 
   .why{
     grid-template-columns: 1fr;
-    grid-gap:0;
+    grid-gap:0; 
 
     &-left{
       justify-self: center;
@@ -147,7 +147,7 @@
           text-align: center;
           //margin-bottom: 3rem ;
         }
-        .img{
+        .why-img{
           display: none;
         }
       }
@@ -290,13 +290,16 @@
   }
 
   .why{
-    align-self: center;
-    justify-self: center;
+    display: flex;
+    @include center;
+    flex-direction: column;
     &-left{
       .container{
         
         h3{
-          
+          width:auto;
+          text-align: center;
+          margin-bottom: 3rem;
         }
       }
     }
@@ -304,7 +307,7 @@
     &-right{
      
       .container{
-        
+        height: auto;
         p{
           font-size:0.8rem;
         }
@@ -336,6 +339,21 @@
         .location{
           font-size:0.8rem;
         }
+      }
+    }
+  }
+
+  .question{
+  
+    .container{
+      width:90%;
+      padding:6rem 1.5rem;
+  
+      h2{
+        margin-bottom: 3rem ;
+      }
+      p{
+        margin-bottom:3rem;
       }
     }
   }

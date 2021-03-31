@@ -12,7 +12,7 @@
 body{
   font-family: 'Montserrat';
   line-height: 1.5;
-  background: $light;
+  background: #eee;
   width: 100%;
   height: 100%;  
 }
@@ -165,18 +165,19 @@ a {
     display: flex;
     @include center;
     //min-height: 14rem;
-    margin-top: 10rem;
+    height: 75vh;
+    width: 100%;
+    margin-top: 0;
     .container{
-      margin: 0;
+      height: 100%;
       width: 65%;
-      text-align: center;
       display: flex;
       flex-direction: column;
       @include center;
-      min-height: 13.2rem;
 
       h1{
         margin:5rem 0;
+        text-align: center;
       }
 
     }
@@ -239,10 +240,10 @@ a {
         text-align: left;
         width: 400px;
       }
-      .img{
+      .why-img{
         width: 400px;
         height:520px;
-        background-image: url('/dist/img/surprise4.jpg');
+        background-image: url('../dist/img/surprise4.jpg');
         background-position: center;
       }
     }
