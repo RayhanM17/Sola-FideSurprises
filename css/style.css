@@ -171,7 +171,7 @@
 body {
   font-family: 'Montserrat';
   line-height: 1.5;
-  background: #eee;
+  background: #fef3f4;
   width: 100%;
   height: 100%;
 }
@@ -216,6 +216,7 @@ a {
   width: 100%;
   overflow: hidden;
   color: #fff;
+  margin-bottom: 0;
 }
 
 .showcase video {
@@ -349,6 +350,7 @@ a {
   height: auto;
   overflow: hidden;
   width: 100%;
+  margin-top: 0;
 }
 
 .ourport-left {
@@ -412,7 +414,7 @@ a {
 .why-left .container .why-img {
   width: 400px;
   height: 520px;
-  background-image: url("../dist/img/surprise4.jpg");
+  background-image: url("/dist/img/surprise4.jpg");
   background-position: center;
 }
 
