@@ -142,24 +142,84 @@
 .btn-lg {
   font-size: 1rem;
   letter-spacing: 3px;
-  padding: 1rem;
-  border: 0.02rem solid #fff;
+  padding: 1rem 1.5rem;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
+  background: none;
+  position: relative;
+  border: none;
   cursor: pointer;
 }
 
+.btn-lg:hover::before, .btn-lg:hover::after {
+  width: 105%;
+  height: 120%;
+  border: 0.02rem solid #fff;
+}
+
+.btn-lg::before, .btn-lg::after {
+  content: "";
+  width: 50%;
+  height: 50%;
+  border: 0.02rem solid #fff;
+  position: absolute;
+  transition: all .5s ease-in-out;
+}
+
+.btn-lg::before {
+  top: 0;
+  left: 0;
+  border-right: transparent;
+  border-bottom: transparent;
+}
+
+.btn-lg::after {
+  bottom: 0;
+  right: 0;
+  border-left: transparent;
+  border-top: transparent;
+}
+
 .btn-md {
-  font-family: 'Montserrat';
-  letter-spacing: 3px;
   font-size: 0.9rem;
-  padding: 0.9rem;
-  border: 0.02rem solid #000;
-  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 0.9rem 1.3rem;
   color: #000;
+  text-transform: uppercase;
   text-align: center;
+  background: none;
+  position: relative;
+  border: none;
   cursor: pointer;
+}
+
+.btn-md:hover::before, .btn-md:hover::after {
+  width: 105%;
+  height: 120%;
+}
+
+.btn-md::before, .btn-md::after {
+  content: "";
+  width: 50%;
+  height: 50%;
+  border: 0.02rem solid #000;
+  position: absolute;
+  transition: all .5s ease-in-out;
+}
+
+.btn-md::before {
+  top: 0;
+  left: 0;
+  border-right: transparent;
+  border-bottom: transparent;
+}
+
+.btn-md::after {
+  bottom: 0;
+  right: 0;
+  border-left: transparent;
+  border-top: transparent;
 }
 
 * {
@@ -369,6 +429,10 @@ a {
   margin-bottom: 4rem;
 }
 
+.ourport-left .container .btn-md {
+  margin-left: 0.5rem;
+}
+
 .ourport .imgs {
   display: flex;
   align-items: center;
@@ -439,6 +503,7 @@ a {
 
 .why-right .container .btn-md {
   float: left;
+  margin-left: 0.3rem;
 }
 
 .testimonials {
@@ -578,6 +643,9 @@ a {
   }
   .ourport {
     grid-template-columns: 1fr 1fr;
+  }
+  .ourport .container .btn-md {
+    margin-bottom: 0.5rem;
   }
   .why {
     grid-gap: 3.2rem;
