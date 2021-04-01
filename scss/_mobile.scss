@@ -33,6 +33,12 @@
   }
   .ourport{
     grid-template-columns: 1fr 1fr;
+    .container{
+      .btn-md{
+        margin-bottom:0.5rem;
+      }
+    }
+      
   }
 
   .why{
