@@ -38,6 +38,7 @@
   width: 100%;
   opacity: 0.9;
   visibility: hidden;
+  z-index: 2;
 }
 
 .menu.show {
@@ -150,6 +151,7 @@
   position: relative;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .btn-lg:hover::before, .btn-lg:hover::after {
@@ -192,6 +194,7 @@
   position: relative;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .btn-md:hover::before, .btn-md:hover::after {
@@ -793,7 +796,7 @@ a {
 
 @media screen and (max-width: 500px) {
   .btn-lg {
-    font-size: 1rem;
+    margin: 1rem;
   }
   .btn-md {
     font-size: 12.8px;
@@ -837,6 +840,9 @@ a {
   .ourport-left .container h2 {
     text-align: center;
   }
+  .ourport-left .container .btn-md {
+    margin: none;
+  }
   .ourport .imgs img {
     height: 13.125rem;
     width: 10.078125rem;
@@ -857,6 +863,9 @@ a {
   }
   .why-right .container p {
     font-size: 0.8rem;
+  }
+  .why-right .container .btn-md {
+    margin-bottom: 0.4rem;
   }
   .testimonials .test-cards .test-card {
     width: 187.5px;
