@@ -95,6 +95,7 @@
   position: relative;
   border:none;
   cursor: pointer;
+  outline: none;
 
   &:hover::before, &:hover::after{
     width:105%;
@@ -136,6 +137,7 @@
   position: relative;
   border:none;
   cursor: pointer;
+  outline: none;
 
   &:hover::before, &:hover::after{
     width:105%;

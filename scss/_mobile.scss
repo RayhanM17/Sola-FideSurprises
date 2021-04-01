@@ -219,7 +219,7 @@
 @include mediaSm{
 
   .btn-lg{
-    font-size:1rem;
+    margin: 1rem;
   }
 
   .btn-md{
@@ -284,6 +284,9 @@
         h2{
           text-align: center;
         }
+        .btn-md{
+          margin: none;
+        }
       }
     }
 
@@ -318,7 +321,7 @@
           font-size:0.8rem;
         }
         .btn-md{
-          
+          margin-bottom: 0.4rem;
         }
       }
     }
