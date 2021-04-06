@@ -631,6 +631,73 @@ a {
   cursor: pointer;
 }
 
+#contact .navs .nav-widescreens {
+  background: #a9484d;
+  margin: 0;
+  overflow: hidden;
+}
+
+#contact .navs .nav-widescreens .nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 1.5rem;
+}
+
+#contact .navs .nav-widescreens .nav-links .nav-link {
+  margin: 0 2rem;
+}
+
+#contact .navs .nav-widescreens .nav-links .nav-link a {
+  color: #fff;
+}
+
+#contact .navs .nav-widescreens .nav-links .nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: none;
+  overflow: hidden;
+  color: #fff;
+}
+
+#contact .navs .nav-widescreens .nav-links .nav-logo h1 {
+  font-size: 48px;
+  font-family: 'Source Serif Pro';
+  text-transform: uppercase;
+  margin: 10px;
+  line-height: 20px;
+}
+
+#contact .navs .nav-widescreens .nav-links .nav-logo p {
+  font-size: 16px;
+  font-family: 'Source Serif Pro';
+  text-transform: uppercase;
+  margin-top: none;
+  font-weight: 400;
+}
+
+#contact .bottom {
+  display: flex;
+}
+
+#contact .bottom .container {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .bottom .container .info-card {
+  display: flex;
+}
+
+#contact .bottom .container .info-card i {
+  color: #000;
+  min-width: 35px;
+  min-height: 35px;
+}
+
 @media screen and (min-width: 1171px) {
   .nav-smallscreens {
     display: none;
