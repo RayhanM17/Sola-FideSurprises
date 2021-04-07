@@ -631,6 +631,14 @@ a {
   cursor: pointer;
 }
 
+#contact {
+  background: #fff;
+}
+
+#contact .navs {
+  min-height: 20vh;
+}
+
 #contact .navs .nav-widescreens {
   background: #a9484d;
   margin: 0;
@@ -679,28 +687,106 @@ a {
   font-weight: 400;
 }
 
-#contact .bottom {
-  display: flex;
+#contact .navs .nav-smallscreens {
+  width: 100%;
+  position: relative;
+  background: #a9484d;
+  overflow: hidden;
+  height: 15vh;
 }
 
-#contact .bottom .container {
+#contact .navs .nav-smallscreens .nav-logo {
+  margin-top: 2rem;
+  list-style: none;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
-#contact .bottom .container .info-card {
-  display: flex;
+#contact .navs .nav-smallscreens .nav-logo h1 {
+  font-size: 3rem;
+  font-family: 'Source Serif Pro';
+  text-transform: uppercase;
+  margin: 10px;
+  line-height: 1.25rem;
+  color: #fff;
 }
 
-#contact .bottom .container .info-card i {
+#contact .navs .nav-smallscreens .nav-logo p {
+  font-size: 1rem;
+  font-family: 'Source Serif Pro';
+  text-transform: uppercase;
+  margin-top: none;
+  font-weight: 400;
+  color: #fff;
+}
+
+#contact .navs .nav-smallscreens .menu-btn {
+  top: 3.2rem;
+}
+
+#contact main {
+  padding-top: 1rem;
+  padding-bottom: 4.5rem;
+  width: 100%;
+}
+
+#contact main .heading {
+  display: flex;
+  align-items: flex-start;
+}
+
+#contact main .heading .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  width: 50%;
+}
+
+#contact main .boxes {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+}
+
+#contact main .boxes .info-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border: 0.02rem #000 solid;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 3rem;
+}
+
+#contact main .boxes .info-box i {
   color: #000;
   min-width: 35px;
   min-height: 35px;
+  margin: 0;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
 }
 
 @media screen and (min-width: 1171px) {
   .nav-smallscreens {
     display: none;
+  }
+  #contact main .heading {
+    align-items: center;
+  }
+  #contact main .heading .container {
+    width: 25%;
+  }
+  #contact main .boxes .info-box {
+    margin-bottom: 4rem;
   }
 }
 
@@ -859,6 +945,15 @@ a {
   .footer .copyright .socials {
     margin-top: 1rem;
   }
+  #contact main .heading {
+    align-items: center;
+  }
+  #contact main .heading .container {
+    width: 100%;
+  }
+  #contact main .boxes .info-box {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -963,5 +1058,40 @@ a {
   }
   .question .container p {
     margin-bottom: 3rem;
+  }
+  #contact {
+    height: 100%;
+  }
+  #contact .navs .nav-smallscreens {
+    height: 13vh;
+  }
+  #contact .navs .nav-smallscreens .nav-logo h1 {
+    font-size: 2rem;
+    line-height: 0.83rem;
+  }
+  #contact .navs .nav-smallscreens .nav-logo p {
+    font-size: 0.66rem;
+  }
+  #contact .navs .nav-smallscreens .menu-btn {
+    top: 3rem;
+  }
+  #contact .navs .nav-smallscreens .menu-btn .btn-line {
+    width: 18px;
+    height: 2px;
+  }
+  #contact .navs .nav-smallscreens .menu-btn.close .btn-line {
+    width: 28px;
+    height: 3px;
+  }
+  #contact main .heading .container p {
+    font-size: 0.8rem;
+  }
+  #contact main .boxes .info-box {
+    font-size: 0.9rem;
+    padding: 1rem 2rem;
+  }
+  #contact main .boxes .info-box i {
+    margin-right: 1rem;
+    margin-top: 1.1rem;
   }
 }

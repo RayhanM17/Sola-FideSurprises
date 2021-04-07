@@ -4,6 +4,22 @@
   .nav-smallscreens{
     display: none;
   }
+  // CONTACT
+  #contact{
+    main{
+      .heading{
+        align-items: center;
+        .container{
+          width:25%;
+        }
+      }
+      .boxes{
+        .info-box{
+          margin-bottom: 4rem;
+        }
+      }
+    }
+  }
 }
 
 // Desktops & laptops
@@ -212,6 +228,23 @@
     }
   }
 
+  // CONTACT
+  #contact{
+    main{
+      .heading{
+        align-items: center;
+        .container{
+          width:100%;
+        }
+      }
+      .boxes{
+        .info-box{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
 }
 
 // Smart Phones
@@ -363,6 +396,57 @@
       }
       p{
         margin-bottom:3rem;
+      }
+    }
+  }
+
+  // CONTACT
+  #contact{
+    height: 100%;
+    .navs{
+      .nav-smallscreens{
+        height: 13vh;
+        .nav-logo{
+          h1{
+            font-size:2rem;
+            line-height: 0.83rem;
+          }
+          p{
+            font-size:0.66rem;
+          }
+        }
+        .menu-btn{
+          top: 3rem;
+          .btn-line{
+            width:18px;
+            height:2px;
+          }
+          &.close{
+            .btn-line{
+              width:28px;
+              height: 3px;
+            }
+          }
+        }
+      }
+    }
+    main{
+      .heading{
+        .container{
+          p{
+            font-size:0.8rem;
+          }
+        }
+      }
+      .boxes{
+        .info-box{
+          font-size: 0.9rem;
+          padding: 1rem 2rem;
+          i{
+            margin-right: 1rem;            
+            margin-top: 1.1rem;
+          }
+        }
       }
     }
   }
