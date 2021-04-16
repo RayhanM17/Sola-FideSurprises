@@ -124,4 +124,23 @@
   }
 }
 
+.modal-btn{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  padding: 2rem;
+  background: #000000;
+  border-radius: 50px 0px 0px 0px;
+  color: #fff;
+  border:none;
+  cursor: pointer;
+  outline: none;
+
+  &:hover{
+    opacity: 0.8;
+  }
+}
 
