@@ -451,4 +451,33 @@
     }
   }
 
+  // MENU
+  .navs{
+    .nav-smallscreens{
+      height: 13vh;
+      .nav-logo{
+        h1{
+          font-size:2rem;
+          line-height: 0.83rem;
+        }
+        p{
+          font-size:0.66rem;
+        }
+      }
+      .menu-btn{
+        top: 3rem;
+        .btn-line{
+          width:18px;
+          height:2px;
+        }
+        &.close{
+          .btn-line{
+            width:28px;
+            height: 3px;
+          }
+        }
+      }
+    }
+  }
+
 }

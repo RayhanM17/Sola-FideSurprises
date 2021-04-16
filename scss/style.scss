@@ -523,5 +523,189 @@ a {
 }
 
 
+// Services Page
+
+#services{
+  background: #fff;
+  main{
+    position: relative;
+    overflow: hidden;
+    height: 200vh;
+    width: 100%;
+    .heading{
+      width: 100%;
+      display: flex;
+      @include center;
+      padding-bottom: 4rem;
+      .container{
+        display: flex;
+        @include center;
+        flex-direction: column;
+        width:50%;
+      }
+    }
+
+    .services-boxes{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-self: center;
+      align-self: center;
+      &-box{
+        width: 600px;
+        height: 400px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        background-image: url('../img/ProposalPlanning.jpg');
+        position: relative;
+        background-origin: center;
+        margin: 2rem;
+        h1{
+          position: absolute;
+          top:5px;
+          left:2px;
+          font-size:3rem;
+          color:#fff;
+          width: 50%;
+        }
+        .modal-btn{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+
+
+  // Pop up Css
+
+  .infopopups{
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    @include center;
+    overflow: hidden;
+    .popup{
+      display: flex;
+      @include center;
+      background-color: #000;
+      color: #fff;
+      padding: 4rem;
+      width: 50%;
+
+      .container{
+        width: 80%;
+        height: 80%;
+        .heading{
+          h3{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3rem;
+            line-height: 59px;
+            text-transform: none;
+          }
+        }
+
+        .reviews{
+          display: flex;
+          align-items: inline;
+          margin: 2rem 0;
+          .stars{
+            color: #ffff00;
+            margin-top: 0.45rem;
+            i{
+              font-size: 1rem;
+              margin-right:0.4rem;
+            }
+          }
+          .numbers{
+            margin-left: 1.5rem;
+            margin-top: 0;
+            p{
+              font-size: 1.5rem;
+              span{
+                font-size: 1.125rem;
+                color:#eee;
+                margin-left: 0.5rem;
+              }
+            }
+          }
+        }
+
+        .tabs{
+          .tab-info{
+            nav{
+              .container{
+                width: auto;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-gap: 0;
+                justify-items: start;
+                align-items: center;
+                p{
+                  font-size: 1.5rem;
+                  margin-right: 0;
+                  //width: 5rem;
+                  overflow: hidden;
+                }
+
+
+                .dot{
+                  width: 10.42px;
+                  height: 10px;
+                  background: $secondaryColor;
+                  border-radius: 50%;
+                  //margin-left: 2.5rem;
+                  //margin-right: 2.5rem;
+                }
+
+                :nth-child(3){
+                  margin-left: 25.73px;
+                  margin-right: 25.73px;
+                }
+                :nth-child(4){
+                  margin-left: 47.21px;
+                  margin-right: 47.21px;
+                }
+
+              }
+            }
+            .text{
+              p{
+                font-size: 1rem;
+                margin: 4rem 0;
+              }
+            }
+          }
+
+          .tab-photo{
+            nav{
+              p{
+
+              }
+              .dot{
+
+              }
+            }
+            .photos{
+              img{
+
+              }
+            }
+          }
+        }
+
+        .btn-md{
+          color: #fff;
+        }
+
+      }
+    }
+  }
+}
+
 
 @import 'mobile';

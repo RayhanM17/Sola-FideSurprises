@@ -150,16 +150,87 @@
   }
 }
 
-// .showcase{
-//   .nav-smallscreens{
-//     .nav-logo{
-//       h1{
-//         font-size: 3rem;
-//       }
-//       p{
-//         font-size: 0.8rem;
-//         color:#000;
-//       }
-//     }
-//   }
-// }
+body{
+  background: #fff;
+  .navs{
+    min-height: 20vh;
+    .nav-widescreens{
+      background: $secondaryColor;
+      margin: 0;
+      overflow: hidden;
+      .nav-links{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:1.5rem 1.5rem;
+        .nav-link{
+          margin: 0 2rem;
+          a{
+            color:#fff;
+          }
+        }      
+        .nav-logo{
+          display: flex;
+          @include center;
+          flex-direction: column;
+          flex-wrap: none;
+          overflow: hidden;
+          color:#fff;
+          h1{
+            font-size: 48px;
+            font-family: 'Source Serif Pro';
+            text-transform: uppercase;
+            margin:10px;
+            line-height: 20px;
+          }
+  
+          p{
+            font-size: 16px;
+            font-family: 'Source Serif Pro';
+            text-transform: uppercase;
+            margin-top:none;
+            font-weight: 400;
+            
+          }
+          
+        }
+      }
+    }
+    .nav-smallscreens{
+      width: 100%;
+      position: relative;
+      background: $secondaryColor;
+      overflow: hidden;
+      height: 15vh;
+      .nav-logo{
+        margin-top: 2rem;
+        list-style: none;
+        display: flex;
+        @include center;
+        flex-direction: column;
+        h1{
+          font-size: 3rem;
+          font-family: 'Source Serif Pro';
+          text-transform: uppercase;
+          margin:10px;
+          line-height: 1.25rem;
+          color: #fff;
+        }
+      
+        p{
+          font-size: 1rem;
+          font-family: 'Source Serif Pro';
+          text-transform: uppercase;
+          margin-top:none;
+          font-weight: 400;
+          color:#fff;
+        }
+          
+      }
+      .menu-btn{
+        top:3.2rem;
+      }
+    }
+  }
+}
