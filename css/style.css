@@ -335,8 +335,8 @@ body .navs .nav-smallscreens .menu-btn {
 }
 
 .btn-md-light:hover::before, .btn-md-light:hover::after {
-  width: 105%;
-  height: 120%;
+  width: 99%;
+  height: 99%;
 }
 
 .btn-md-light::before, .btn-md-light::after {
@@ -996,13 +996,14 @@ a {
   z-index: 2;
   height: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  position: relative;
+  position: fixed;
 }
 
 #services .infopopups .popup {
+  position: absolute;
+  top: 1%;
+  right: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1010,6 +1011,7 @@ a {
   color: #fff;
   padding: 4rem;
   width: 50%;
+  margin-bottom: 15rem;
 }
 
 #services .infopopups .popup .container {
@@ -1033,7 +1035,7 @@ a {
 }
 
 #services .infopopups .popup .container .reviews .stars {
-  color: #ffff00;
+  color: #FFE41F;
   margin-top: 0.45rem;
 }
 
@@ -1053,14 +1055,24 @@ a {
 
 #services .infopopups .popup .container .reviews .numbers p span {
   font-size: 1.125rem;
-  color: #eee;
+  color: rgba(255, 255, 255, 0.95);
   margin-left: 0.5rem;
 }
 
+#services .infopopups .popup .container .tabs .tab-info {
+  width: 100%;
+}
+
+#services .infopopups .popup .container .tabs .tab-info nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
 #services .infopopups .popup .container .tabs .tab-info nav .container {
-  width: auto;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 20%);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 0;
   justify-items: start;
@@ -1069,8 +1081,10 @@ a {
 
 #services .infopopups .popup .container .tabs .tab-info nav .container p {
   font-size: 1.5rem;
+  font-weight: 400;
   margin-right: 0;
   overflow: hidden;
+  cursor: pointer;
 }
 
 #services .infopopups .popup .container .tabs .tab-info nav .container .dot {
@@ -1088,11 +1102,72 @@ a {
 #services .infopopups .popup .container .tabs .tab-info nav .container :nth-child(4) {
   margin-left: 47.21px;
   margin-right: 47.21px;
+  background: #000;
 }
 
 #services .infopopups .popup .container .tabs .tab-info .text p {
-  font-size: 1rem;
+  font-size: 1.125rem;
   margin: 4rem 0;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+#services .infopopups .popup .container .tabs .tab-photo {
+  width: 100%;
+}
+
+#services .infopopups .popup .container .tabs .tab-photo nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#services .infopopups .popup .container .tabs .tab-photo nav .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 20%);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 0;
+  justify-items: start;
+  align-items: center;
+}
+
+#services .infopopups .popup .container .tabs .tab-photo nav .container p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-right: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#services .infopopups .popup .container .tabs .tab-photo nav .container .dot {
+  width: 10.42px;
+  height: 10px;
+  background: #a9484d;
+  border-radius: 50%;
+}
+
+#services .infopopups .popup .container .tabs .tab-photo nav .container :nth-child(3) {
+  margin-left: 25.73px;
+  margin-right: 25.73px;
+  background: #000;
+}
+
+#services .infopopups .popup .container .tabs .tab-photo nav .container :nth-child(4) {
+  margin-left: 47.21px;
+  margin-right: 47.21px;
+}
+
+#services .infopopups .popup .container .tabs .tab-photo .photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  width: 100%;
+  margin: 3rem 0;
+}
+
+#services .infopopups .popup .container .tabs .tab-photo .photos img {
+  height: 200px;
+  width: 150px;
 }
 
 #services .infopopups .popup .container .btn-md {
