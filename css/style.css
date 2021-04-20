@@ -998,6 +998,11 @@ a {
   width: 100%;
   position: relative;
   position: fixed;
+  visibility: hidden;
+}
+
+#services .infopopups.show {
+  visibility: visible;
 }
 
 #services .infopopups .popup {
@@ -1047,13 +1052,16 @@ a {
 #services .infopopups .popup .container .reviews .numbers {
   margin-left: 1.5rem;
   margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #services .infopopups .popup .container .reviews .numbers p {
   font-size: 1.5rem;
 }
 
-#services .infopopups .popup .container .reviews .numbers p span {
+#services .infopopups .popup .container .reviews .numbers span {
   font-size: 1.125rem;
   color: rgba(255, 255, 255, 0.95);
   margin-left: 0.5rem;
