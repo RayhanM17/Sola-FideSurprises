@@ -585,6 +585,10 @@ a {
     width: 100%;
     position: relative;
     position: fixed;
+    visibility: hidden;
+    &.show{
+      visibility: visible;
+    }
     .popup{
       position:absolute;
       top:1%;
@@ -626,13 +630,15 @@ a {
           .numbers{
             margin-left: 1.5rem;
             margin-top: 0;
+            display: flex;
+            @include center;
             p{
               font-size: 1.5rem;
-              span{
-                font-size: 1.125rem;
-                color: rgba(255, 255, 255, 0.95);
-                margin-left: 0.5rem;
-              }
+            }
+            span{
+              font-size: 1.125rem;
+              color: rgba(255, 255, 255, 0.95);
+              margin-left: 0.5rem;
             }
           }
         }
