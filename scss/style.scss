@@ -549,8 +549,9 @@ a {
       width: 100%;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      justify-self: center;
-      align-self: center;
+      grid-template-rows: repeat(3, 1fr);
+      align-items: center;
+      justify-items: center;
       &-box{
         width: 600px;
         height: 400px;
@@ -585,11 +586,12 @@ a {
     width: 100%;
     position: relative;
     position: fixed;
-    visibility: hidden;
+    display: none;
     &.show{
-      visibility: visible;
+      display: flex;
     }
     .popup{
+      z-index: 3;
       position:absolute;
       top:1%;
       right: 25%;
@@ -604,6 +606,14 @@ a {
       .container{
         width: 80%;
         height: 80%;
+
+        .close{
+          position: absolute;
+          top: 0;
+          right: 14px;
+          font-size:3rem;
+          transform:rotate(45deg);
+        }
         .heading{
           h3{
             font-family: Montserrat;
@@ -612,6 +622,7 @@ a {
             font-size: 3rem;
             line-height: 59px;
             text-transform: none;
+            text-align: left;
           }
         }
 
@@ -646,6 +657,9 @@ a {
         .tabs{
           .tab-info{
             width: 100%;
+            &.close{
+              display: none;
+            }
             nav{
               width: 100%;
               display: flex;
@@ -700,6 +714,9 @@ a {
 
           .tab-photo{
             width: 100%;
+            &.close{
+              display: none;
+            }
             nav{
               width: 100%;
               display: flex;
