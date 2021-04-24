@@ -963,8 +963,9 @@ a {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-self: center;
-  align-self: center;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
 }
 
 #services main .services-boxes-box {
@@ -998,14 +999,15 @@ a {
   width: 100%;
   position: relative;
   position: fixed;
-  visibility: hidden;
+  display: none;
 }
 
 #services .infopopups.show {
-  visibility: visible;
+  display: flex;
 }
 
 #services .infopopups .popup {
+  z-index: 3;
   position: absolute;
   top: 1%;
   right: 25%;
@@ -1024,6 +1026,14 @@ a {
   height: 80%;
 }
 
+#services .infopopups .popup .container .close {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 3rem;
+  transform: rotate(45deg);
+}
+
 #services .infopopups .popup .container .heading h3 {
   font-family: Montserrat;
   font-style: normal;
@@ -1031,6 +1041,7 @@ a {
   font-size: 3rem;
   line-height: 59px;
   text-transform: none;
+  text-align: left;
 }
 
 #services .infopopups .popup .container .reviews {
@@ -1069,6 +1080,10 @@ a {
 
 #services .infopopups .popup .container .tabs .tab-info {
   width: 100%;
+}
+
+#services .infopopups .popup .container .tabs .tab-info.close {
+  display: none;
 }
 
 #services .infopopups .popup .container .tabs .tab-info nav {
@@ -1121,6 +1136,10 @@ a {
 
 #services .infopopups .popup .container .tabs .tab-photo {
   width: 100%;
+}
+
+#services .infopopups .popup .container .tabs .tab-photo.close {
+  display: none;
 }
 
 #services .infopopups .popup .container .tabs .tab-photo nav {
