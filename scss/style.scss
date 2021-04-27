@@ -542,6 +542,9 @@ a {
         flex-direction: column;
         width:50%;
         margin: 0;
+        h2{
+          margin-top: 4rem;
+        }
       }
     }
 
@@ -556,8 +559,8 @@ a {
       grid-gap: 3rem;
 
       &-box1{
-        width: 37.5rem;
-        height: 25rem;
+        width: 31.25rem;
+        height: 20.75rem;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         background-image: url('../img/ProposalPlanning.jpg');
         position: relative;
@@ -568,7 +571,7 @@ a {
           position: absolute;
           top:5px;
           left:2px;
-          font-size:3rem;
+          font-size:2.7rem;
           color:#fff;
           width: 50%;
         }
@@ -579,8 +582,8 @@ a {
         }
       }
       &-box2{
-        width: 600px;
-        height: 400px;
+        width: 31.25rem;
+        height: 20.75rem;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         background-image: url('../img/Surprise Breakfasts.jpg');
         position: relative;
@@ -589,7 +592,7 @@ a {
           position: absolute;
           top:5px;
           left:2px;
-          font-size:3rem;
+          font-size:2.7rem;
           color:#fff;
           width: 50%;
         }
@@ -600,8 +603,8 @@ a {
         }
       }
       &-box3{
-        width: 600px;
-        height: 400px;
+        width: 31.25rem;
+        height: 20.75rem;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         background-image: url('../img/Surprise Trip.jpg');
         position: relative;
@@ -610,7 +613,7 @@ a {
           position: absolute;
           top:5px;
           left:2px;
-          font-size:3rem;
+          font-size:2.7rem;
           color:#fff;
           width: 50%;
         }
@@ -621,8 +624,8 @@ a {
         }
       }
       &-box4{
-        width: 600px;
-        height: 400px;
+        width: 31.25rem;
+        height: 20.75rem;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         background-image: url('../img/Surprise Date.jpg');
         position: relative;
@@ -631,7 +634,7 @@ a {
           position: absolute;
           top:5px;
           left:2px;
-          font-size:3rem;
+          font-size:2.7rem;
           color:#fff;
           width: 50%;
         }
@@ -642,8 +645,8 @@ a {
         }
       }
       &-box5{
-        width: 600px;
-        height: 400px;
+        width: 31.25rem;
+        height: 20.75rem;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         background-image: url('../img/Surprise Hotel decor.jpg');
         position: relative;
@@ -654,7 +657,7 @@ a {
           position: absolute;
           top:5px;
           left:2px;
-          font-size:3rem;
+          font-size:2.7rem;
           color:#fff;
           width: 50%;
         }

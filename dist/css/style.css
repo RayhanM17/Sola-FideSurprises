@@ -366,10 +366,10 @@ body .navs .nav-smallscreens .menu-btn {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 34px;
   text-align: center;
-  padding: 2rem;
+  padding: 1.8rem;
   background: #000000;
   border-radius: 50px 0px 0px 0px;
   color: #fff;
@@ -958,6 +958,10 @@ a {
   margin: 0;
 }
 
+#services main .heading .container h2 {
+  margin-top: 4rem;
+}
+
 #services main .services-boxes {
   width: 100%;
   margin: 10rem 0;
@@ -970,8 +974,8 @@ a {
 }
 
 #services main .services-boxes-box1 {
-  width: 37.5rem;
-  height: 25rem;
+  width: 31.25rem;
+  height: 20.75rem;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-image: url("../img/ProposalPlanning.jpg");
   position: relative;
@@ -984,7 +988,7 @@ a {
   position: absolute;
   top: 5px;
   left: 2px;
-  font-size: 3rem;
+  font-size: 2.7rem;
   color: #fff;
   width: 50%;
 }
@@ -996,8 +1000,8 @@ a {
 }
 
 #services main .services-boxes-box2 {
-  width: 600px;
-  height: 400px;
+  width: 31.25rem;
+  height: 20.75rem;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-image: url("../img/Surprise Breakfasts.jpg");
   position: relative;
@@ -1008,7 +1012,7 @@ a {
   position: absolute;
   top: 5px;
   left: 2px;
-  font-size: 3rem;
+  font-size: 2.7rem;
   color: #fff;
   width: 50%;
 }
@@ -1020,8 +1024,8 @@ a {
 }
 
 #services main .services-boxes-box3 {
-  width: 600px;
-  height: 400px;
+  width: 31.25rem;
+  height: 20.75rem;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-image: url("../img/Surprise Trip.jpg");
   position: relative;
@@ -1032,7 +1036,7 @@ a {
   position: absolute;
   top: 5px;
   left: 2px;
-  font-size: 3rem;
+  font-size: 2.7rem;
   color: #fff;
   width: 50%;
 }
@@ -1044,8 +1048,8 @@ a {
 }
 
 #services main .services-boxes-box4 {
-  width: 600px;
-  height: 400px;
+  width: 31.25rem;
+  height: 20.75rem;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-image: url("../img/Surprise Date.jpg");
   position: relative;
@@ -1056,7 +1060,7 @@ a {
   position: absolute;
   top: 5px;
   left: 2px;
-  font-size: 3rem;
+  font-size: 2.7rem;
   color: #fff;
   width: 50%;
 }
@@ -1068,8 +1072,8 @@ a {
 }
 
 #services main .services-boxes-box5 {
-  width: 600px;
-  height: 400px;
+  width: 31.25rem;
+  height: 20.75rem;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-image: url("../img/Surprise Hotel decor.jpg");
   position: relative;
@@ -1082,7 +1086,7 @@ a {
   position: absolute;
   top: 5px;
   left: 2px;
-  font-size: 3rem;
+  font-size: 2.7rem;
   color: #fff;
   width: 50%;
 }
@@ -1379,26 +1383,54 @@ a {
     display: flex;
   }
   #services main .services-boxes {
-    margin: 2rem 0;
+    margin: 8rem 0;
+    grid-gap: 2rem;
   }
   #services main .services-boxes-box1 {
-    width: 24.75rem;
-    height: 16.5rem;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background-image: url("../img/ProposalPlanning.jpg");
-    position: relative;
-    background-origin: center;
-    grid-row: 1/2;
-    grid-column: 1/2;
+    width: 23rem;
+    height: 16.6rem;
+    margin-right: 0;
   }
   #services main .services-boxes-box1 h1 {
     font-size: 2rem;
-    width: 50%;
+    line-height: 3rem;
+  }
+  #services main .services-boxes-box2 {
+    width: 23rem;
+    height: 16.6rem;
+    margin-left: 0;
+  }
+  #services main .services-boxes-box2 h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  #services main .services-boxes-box3 {
+    width: 23rem;
+    height: 16.6rem;
+  }
+  #services main .services-boxes-box3 h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  #services main .services-boxes-box4 {
+    width: 23rem;
+    height: 16.6rem;
+  }
+  #services main .services-boxes-box4 h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  #services main .services-boxes-box5 {
+    width: 25rem;
+    height: 16.6rem;
+  }
+  #services main .services-boxes-box5 h1 {
+    font-size: 2rem;
+    line-height: 3rem;
   }
   .modal-btn {
-    font-size: 1.05rem;
-    line-height: 1.4025rem;
-    padding: 1.32rem;
+    font-size: 1.2rem;
+    padding: 1.3rem;
   }
 }
 
@@ -1504,6 +1536,75 @@ a {
   }
   #contact main .boxes .info-box {
     font-size: 1.2rem;
+  }
+  #services main .heading {
+    display: flex;
+    align-items: center;
+  }
+  #services main .heading .container {
+    width: 100%;
+  }
+  #services main .services-boxes {
+    margin: 8rem 0;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  #services main .services-boxes-box1 {
+    width: 25rem;
+    height: 16.6rem;
+    margin-right: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #services main .services-boxes-box1 h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  #services main .services-boxes-box2 {
+    width: 25rem;
+    height: 16.6rem;
+    margin-left: 0;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #services main .services-boxes-box2 h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  #services main .services-boxes-box3 {
+    width: 25rem;
+    height: 16.6rem;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #services main .services-boxes-box3 h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  #services main .services-boxes-box4 {
+    width: 25rem;
+    height: 16.6rem;
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  #services main .services-boxes-box4 h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  #services main .services-boxes-box5 {
+    width: 25rem;
+    height: 16.6rem;
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  #services main .services-boxes-box5 h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .modal-btn {
+    font-size: 1.2rem;
+    padding: 1.3rem;
   }
 }
 
@@ -1665,5 +1766,100 @@ a {
   .navs .nav-smallscreens .menu-btn.close .btn-line {
     width: 28px;
     height: 3px;
+  }
+  #services .navs .nav-smallscreens {
+    height: 13vh;
+  }
+  #services .navs .nav-smallscreens .nav-logo h1 {
+    font-size: 2rem;
+    line-height: 0.83rem;
+  }
+  #services .navs .nav-smallscreens .nav-logo p {
+    font-size: 0.66rem;
+  }
+  #services .navs .nav-smallscreens .menu-btn {
+    top: 3rem;
+  }
+  #services .navs .nav-smallscreens .menu-btn .btn-line {
+    width: 18px;
+    height: 2px;
+  }
+  #services .navs .nav-smallscreens .menu-btn.close .btn-line {
+    width: 28px;
+    height: 3px;
+  }
+  #services main .heading {
+    display: flex;
+    align-items: center;
+  }
+  #services main .heading .container {
+    width: 100%;
+  }
+  #services main .services-boxes {
+    margin: 8rem 0;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  #services main .services-boxes-box1 {
+    height: 25rem;
+    width: 16.6rem;
+    margin-right: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #services main .services-boxes-box1 h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-left: 1rem;
+  }
+  #services main .services-boxes-box2 {
+    height: 25rem;
+    width: 16.6rem;
+    margin-left: 0;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #services main .services-boxes-box2 h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-left: 1rem;
+  }
+  #services main .services-boxes-box3 {
+    height: 25rem;
+    width: 16.6rem;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #services main .services-boxes-box3 h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-left: 1rem;
+  }
+  #services main .services-boxes-box4 {
+    height: 25rem;
+    width: 16.6rem;
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  #services main .services-boxes-box4 h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-left: 1rem;
+  }
+  #services main .services-boxes-box5 {
+    height: 25rem;
+    width: 16.6rem;
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  #services main .services-boxes-box5 h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-left: 1rem;
+  }
+  .modal-btn {
+    font-size: 1.1rem;
+    padding: 1.2rem;
   }
 }

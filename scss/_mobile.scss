@@ -126,32 +126,60 @@
       }
 
       .services-boxes{
-        margin: 2rem 0;
-  
+        margin: 8rem 0;
+        grid-gap: 2rem;
         &-box1{
-          width: 24.75rem;
-          height: 16.5rem;
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          background-image: url('../img/ProposalPlanning.jpg');
-          position: relative;
-          background-origin: center;
-          grid-row: 1/2;
-          grid-column: 1/2;
+          width: 23rem;
+          height: 16.6rem;
+          margin-right:0;
           h1{
-            font-size:2rem;
-            width: 50%;
+            font-size: 2rem;
+            line-height: 3rem;
+          }
+        }
+        &-box2{
+          width: 23rem;
+          height: 16.6rem;
+          margin-left: 0;
+          h1{
+            font-size: 2rem;
+            line-height: 3rem;
+          }
+        }
+        &-box3{
+          width: 23rem;
+          height: 16.6rem;
+          h1{
+            font-size: 2rem;
+            line-height: 3rem;
+          }
+        }
+        &-box4{
+          width: 23rem;
+          height: 16.6rem;
+          h1{
+            font-size: 2rem;
+            line-height: 3rem;
+          }
+        }
+        &-box5{
+          width: 25rem;
+          height: 16.6rem;
+          h1{
+            font-size: 2rem;
+            line-height: 3rem;
           }
         }
       }
     }
   }
 
-
   .modal-btn{
-    font-size: 1.05rem;
-    line-height: 1.4025rem;
-    padding: 1.32rem;
+    font-size: 1.2rem;
+    padding: 1.3rem;
   }
+
+
 }
 
 // Tablets & small laptops
@@ -282,6 +310,84 @@
         }
       }
     }
+  }
+
+  // Services
+
+  #services{
+    main{
+      .heading{
+        display: flex;
+        align-items: center;
+        .container{
+          width: 100%;
+        }
+      }
+
+      .services-boxes{
+        margin: 8rem 0;
+        grid-gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        &-box1{
+          width: 25rem;
+          height: 16.6rem;
+          margin-right:0;
+          grid-column: 1/2;
+          grid-row: 1/2;
+          h1{
+            font-size: 2rem;
+            line-height: 3rem;
+          }
+        }
+        &-box2{
+          width: 25rem;
+          height: 16.6rem;
+          margin-left: 0;
+          grid-column: 1/2;
+          grid-row: 2/3;
+          h1{
+            font-size: 2rem;
+            line-height: 3rem;
+          }
+        }
+        &-box3{
+          width: 25rem;
+          height: 16.6rem;
+          grid-column: 1/2;
+          grid-row: 3/4;
+          h1{
+            font-size: 2rem;
+            line-height: 3rem;
+          }
+        }
+        &-box4{
+          width: 25rem;
+          height: 16.6rem;
+          grid-column: 1/2;
+          grid-row: 4/5;
+          h1{
+            font-size: 2rem;
+            line-height: 3rem;
+          }
+        }
+        &-box5{
+          width: 25rem;
+          height: 16.6rem;
+          grid-column: 1/2;
+          grid-row: 5/6;
+          h1{
+            font-size: 2rem;
+            line-height: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  .modal-btn{
+    font-size: 1.2rem;
+    padding: 1.3rem;
   }
 
 }
@@ -517,6 +623,120 @@
         }
       }
     }
+  }
+
+  // Services
+
+  #services{
+
+    .navs{
+      .nav-smallscreens{
+        height: 13vh;
+        .nav-logo{
+          h1{
+            font-size:2rem;
+            line-height: 0.83rem;
+          }
+          p{
+            font-size:0.66rem;
+          }
+        }
+        .menu-btn{
+          top: 3rem;
+          .btn-line{
+            width:18px;
+            height:2px;
+          }
+          &.close{
+            .btn-line{
+              width:28px;
+              height: 3px;
+            }
+          }
+        }
+      }
+    }
+
+
+
+    main{
+      .heading{
+        display: flex;
+        align-items: center;
+        .container{
+          width: 100%;
+        }
+      }
+
+      .services-boxes{
+        margin: 8rem 0;
+        grid-gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        &-box1{
+          height: 25rem;
+          width: 16.6rem;
+          margin-right:0;
+          grid-column: 1/2;
+          grid-row: 1/2;
+          h1{
+            font-size: 2rem;
+            line-height: 3rem;
+            margin-left: 1rem;
+          }
+        }
+        &-box2{
+          height: 25rem;
+          width: 16.6rem;
+          margin-left: 0;
+          grid-column: 1/2;
+          grid-row: 2/3;
+          h1{
+            font-size: 2rem;
+            line-height: 3rem;
+            margin-left: 1rem;
+          }
+        }
+        &-box3{
+          height: 25rem;
+          width: 16.6rem;
+          grid-column: 1/2;
+          grid-row: 3/4;
+          h1{
+            font-size: 2rem;
+            line-height: 3rem;
+            margin-left: 1rem;
+          }
+        }
+        &-box4{
+          height: 25rem;
+          width: 16.6rem;
+          grid-column: 1/2;
+          grid-row: 4/5;
+          h1{
+            font-size: 2rem;
+            line-height: 3rem;
+            margin-left: 1rem;
+          }
+        }
+        &-box5{
+          height: 25rem;
+          width: 16.6rem;
+          grid-column: 1/2;
+          grid-row: 5/6;
+          h1{
+            font-size: 2rem;
+            line-height: 3rem;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .modal-btn{
+    font-size: 1.1rem;
+    padding: 1.2rem;
   }
 
 }
