@@ -1181,6 +1181,7 @@ a {
   font-size: 1.125rem;
   color: rgba(255, 255, 255, 0.95);
   margin-left: 0.5rem;
+  margin-top: 0.17rem;
 }
 
 #services .infopopups .popup .container .tabs .tab-info {
@@ -1680,10 +1681,14 @@ a {
   #services .infopopups .popup .container .reviews .stars i {
     font-size: 0.7rem;
   }
+  #services .infopopups .popup .container .reviews .numbers {
+    margin-top: 0.13rem;
+  }
   #services .infopopups .popup .container .reviews .numbers p {
     font-size: 1rem;
   }
   #services .infopopups .popup .container .reviews .numbers span {
+    margin-top: 0.1rem;
     font-size: 0.8rem;
   }
   #services .infopopups .popup .container .tabs .tab-info nav .container p {
@@ -2012,12 +2017,14 @@ a {
     font-size: 0.8rem;
   }
   #services .infopopups .popup .container .reviews .numbers {
+    margin-top: 0.35rem;
     margin-left: 0.8rem;
   }
   #services .infopopups .popup .container .reviews .numbers p {
     font-size: 0.8rem;
   }
   #services .infopopups .popup .container .reviews .numbers span {
+    margin-top: 0.18rem;
     font-size: 0.6rem;
   }
   #services .infopopups .popup .container .tabs .tab-info nav .container p {
