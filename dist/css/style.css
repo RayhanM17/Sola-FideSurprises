@@ -1098,7 +1098,7 @@ a {
 }
 
 #services .infopopups {
-  z-index: 2;
+  z-index: 3;
   height: 100%;
   width: 100%;
   position: relative;
@@ -1111,9 +1111,9 @@ a {
 }
 
 #services .infopopups .popup {
-  z-index: 3;
+  z-index: 4;
   position: absolute;
-  top: 1%;
+  top: 0.5%;
   right: 25%;
   display: flex;
   align-items: center;
@@ -1121,7 +1121,7 @@ a {
   background-color: #000;
   color: #fff;
   padding: 4rem;
-  width: 50%;
+  width: 60%;
   margin-bottom: 15rem;
 }
 
@@ -1136,6 +1136,7 @@ a {
   right: 14px;
   font-size: 3rem;
   transform: rotate(45deg);
+  cursor: pointer;
 }
 
 #services .infopopups .popup .container .heading h3 {
@@ -1428,6 +1429,70 @@ a {
     font-size: 2rem;
     line-height: 3rem;
   }
+  #services .infopopups .popup {
+    right: 10%;
+    width: 80%;
+  }
+  #services .infopopups .popup .container {
+    width: 85%;
+  }
+  #services .infopopups .popup .container .heading h3 {
+    font-size: 2.7rem;
+  }
+  #services .infopopups .popup .container .reviews .stars i {
+    font-size: 0.9rem;
+  }
+  #services .infopopups .popup .container .reviews .numbers p {
+    font-size: 1.35rem;
+  }
+  #services .infopopups .popup .container .reviews .numbers span {
+    font-size: 1.01rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-info nav .container p {
+    font-size: 1.35rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-info nav .container .dot {
+    width: 0.59rem;
+    height: 0.56rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-info nav .container :nth-child(3) {
+    margin-left: 1.62rem;
+    margin-right: 1.63rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-info nav .container :nth-child(4) {
+    margin-left: 2.89rem;
+    margin-right: 2.89rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-info .text p {
+    font-size: 1.0125rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo nav .container p {
+    font-size: 1.35rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo nav .container .dot {
+    width: 0.59rem;
+    height: 0.56rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo nav .container :nth-child(3) {
+    margin-left: 1.62rem;
+    margin-right: 1.63rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo nav .container :nth-child(4) {
+    margin-left: 2.89rem;
+    margin-right: 2.89rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo .photos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo .photos img {
+    height: 11.25rem;
+    width: 8.44rem;
+  }
+  #services .infopopups .popup .container .btn-md {
+    color: #fff;
+  }
   .modal-btn {
     font-size: 1.2rem;
     padding: 1.3rem;
@@ -1601,6 +1666,80 @@ a {
   #services main .services-boxes-box5 h1 {
     font-size: 2rem;
     line-height: 3rem;
+  }
+  #services .infopopups .popup {
+    right: 5%;
+    width: 85%;
+  }
+  #services .infopopups .popup .container {
+    width: 85%;
+  }
+  #services .infopopups .popup .container .heading h3 {
+    font-size: 2rem;
+  }
+  #services .infopopups .popup .container .reviews .stars i {
+    font-size: 0.7rem;
+  }
+  #services .infopopups .popup .container .reviews .numbers p {
+    font-size: 1rem;
+  }
+  #services .infopopups .popup .container .reviews .numbers span {
+    font-size: 0.8rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-info nav .container p {
+    font-size: 1rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-info nav .container .dot {
+    width: 0.59rem;
+    height: 0.56rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-info nav .container :nth-child(3) {
+    margin-left: 1.15rem;
+    margin-right: 1.15rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-info nav .container :nth-child(4) {
+    margin-left: 2.65rem;
+    margin-right: 2.65rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-info .text p {
+    font-size: 0.9rem;
+    margin: 2rem 0;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo nav .container p {
+    font-size: 1rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo nav .container .dot {
+    width: 0.59rem;
+    height: 0.56rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo nav .container :nth-child(3) {
+    margin-left: 1.44rem;
+    margin-right: 1.44rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo nav .container :nth-child(4) {
+    margin-left: 2.2rem;
+    margin-right: 2.2rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo .photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo .photos img {
+    height: 11.25rem;
+    width: 8.44rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo .photos img:nth-child(1) {
+    justify-self: start;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo .photos img:nth-child(2) {
+    justify-self: start;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo .photos img:nth-child(3) {
+    display: none;
+  }
+  #services .infopopups .popup .container .btn-md {
+    color: #fff;
   }
   .modal-btn {
     font-size: 1.2rem;
@@ -1857,6 +1996,74 @@ a {
     font-size: 2rem;
     line-height: 3rem;
     margin-left: 1rem;
+  }
+  #services .infopopups .popup {
+    right: 8%;
+    width: 85%;
+    padding: 2rem;
+  }
+  #services .infopopups .popup .container {
+    width: 85%;
+  }
+  #services .infopopups .popup .container .heading h3 {
+    font-size: 1.8rem;
+  }
+  #services .infopopups .popup .container .reviews .stars i {
+    font-size: 0.8rem;
+  }
+  #services .infopopups .popup .container .reviews .numbers {
+    margin-left: 0.8rem;
+  }
+  #services .infopopups .popup .container .reviews .numbers p {
+    font-size: 0.8rem;
+  }
+  #services .infopopups .popup .container .reviews .numbers span {
+    font-size: 0.6rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-info nav .container p {
+    font-size: 0.8rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-info nav .container .dot {
+    width: 0.59rem;
+    height: 0.56rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-info nav .container :nth-child(3) {
+    margin-left: 1.62rem;
+    margin-right: 1.63rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-info nav .container :nth-child(4) {
+    margin-left: 2.89rem;
+    margin-right: 2.89rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-info .text p {
+    font-size: 0.8rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo nav .container p {
+    font-size: 1.35rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo nav .container .dot {
+    width: 0.59rem;
+    height: 0.56rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo nav .container :nth-child(3) {
+    margin-left: 1.62rem;
+    margin-right: 1.63rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo nav .container :nth-child(4) {
+    margin-left: 2.89rem;
+    margin-right: 2.89rem;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo .photos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #services .infopopups .popup .container .tabs .tab-photo .photos img {
+    height: 11.25rem;
+    width: 8.44rem;
+  }
+  #services .infopopups .popup .container .btn-md {
+    color: #fff;
   }
   .modal-btn {
     font-size: 1.1rem;

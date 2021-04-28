@@ -120,9 +120,9 @@
       .heading{
         display: flex;
         //align-items: center;
-        .container{
+        // .container{
 
-        }
+        // }
       }
 
       .services-boxes{
@@ -172,6 +172,122 @@
         }
       }
     }
+
+    //POPUPS
+    .infopopups{
+
+      .popup{
+        right: 10%;
+        width: 80%;
+
+        .container{
+          width: 85%;
+
+          .heading{
+            h3{
+              font-size: 2.7rem;
+            }
+          }
+
+          .reviews{
+            
+            .stars{
+              
+              i{
+                font-size: 0.9rem;
+              }
+            }
+            .numbers{
+              
+              p{
+                font-size: 1.35rem;
+              }
+              span{
+                font-size: 1.01rem;
+              }
+            }
+          }
+
+          .tabs{
+            .tab-info{
+              
+              nav{
+                
+                .container{
+                  
+                  p{
+                    font-size: 1.35rem;
+                  }
+
+                  .dot{
+                    width: 0.59rem;
+                    height: 0.56rem;
+                  }
+
+                  :nth-child(3){
+                    margin-left:1.62rem;
+                    margin-right:1.63rem;
+
+                  }
+                  :nth-child(4){
+                    margin-left:2.89rem;
+                    margin-right:2.89rem;
+                  }
+
+                }
+              }
+              .text{
+                p{
+                  font-size: 1.0125rem;
+                }
+              }
+            }
+
+            .tab-photo{
+              
+              nav{
+                
+                .container{
+                  
+                  p{
+                    font-size: 1.35rem;
+                  }
+
+                  .dot{
+                    width: 0.59rem;
+                    height: 0.56rem;
+                  }
+
+                  :nth-child(3){
+                    margin-left:1.62rem;
+                    margin-right:1.63rem;
+                  }
+                  :nth-child(4){
+                    margin-left:2.89rem;
+                    margin-right:2.89rem;
+                  }
+
+                }
+              }
+              .photos{
+                display: flex;
+                @include center;
+                img{
+                  height: 11.25rem;
+                  width: 8.44rem;
+                }
+              }
+            }
+          }
+
+          .btn-md{
+            color: #fff;
+          }
+
+        }
+      }
+    }
+
   }
 
   .modal-btn{
@@ -179,6 +295,8 @@
     padding: 1.3rem;
   }
 
+
+  
 
 }
 
@@ -380,6 +498,132 @@
             font-size: 2rem;
             line-height: 3rem;
           }
+        }
+      }
+    }
+
+    //POPUPS
+    .infopopups{
+
+      .popup{
+        right: 5%;
+        width: 85%;
+
+        .container{
+          width: 85%;
+          .heading{
+            h3{
+              font-size: 2rem;
+            }
+          }
+
+          .reviews{
+            
+            .stars{
+              
+              i{
+                font-size: 0.7rem;
+              }
+            }
+            .numbers{
+              
+              p{
+                font-size: 1rem;
+              }
+              span{
+                font-size: 0.8rem;
+              }
+            }
+          }
+
+          .tabs{
+            .tab-info{
+              
+              nav{
+                
+                .container{
+                  
+                  p{
+                    font-size: 1rem;
+                  }
+
+                  .dot{
+                    width: 0.59rem;
+                    height: 0.56rem;
+                  }
+
+                  :nth-child(3){
+                    margin-left:1.15rem;
+                    margin-right:1.15rem;
+
+                  }
+                  :nth-child(4){
+                    margin-left:2.65rem;
+                    margin-right:2.65rem;
+                  }
+
+                }
+              }
+              .text{
+                p{
+                  font-size: 0.9rem;
+                  margin: 2rem 0;
+                }
+              }
+            }
+
+            .tab-photo{
+              
+              nav{
+                
+                .container{
+                  
+                  p{
+                    font-size: 1rem;
+                  }
+
+                  .dot{
+                    width: 0.59rem;
+                    height: 0.56rem;
+                  }
+
+                  :nth-child(3){
+                    margin-left:1.44rem;
+                    margin-right:1.44rem;
+                  }
+                  :nth-child(4){
+                    margin-left:2.2rem;
+                    margin-right:2.2rem;
+                  }
+
+                }
+              }
+              .photos{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 3rem;
+                img{
+                  height: 11.25rem;
+                  width: 8.44rem;
+                  &:nth-child(1){
+                    justify-self: start;
+                  }
+                  &:nth-child(2){
+                    justify-self: start;
+                  }
+                  &:nth-child(3){
+                    display: none;
+                  }
+                  
+                }
+              }
+            }
+          }
+
+          .btn-md{
+            color: #fff;
+          }
+
         }
       }
     }
@@ -732,7 +976,125 @@
         }
       }
     }
+
+
+      //POPUPS
+    .infopopups{
+
+      .popup{
+        right: 8%;
+        width: 85%;
+        padding: 2rem;
+
+        .container{
+          width: 85%;
+
+          .heading{
+            h3{
+              font-size: 1.8rem;
+            }
+          }
+
+          .reviews{
+            
+            .stars{
+              
+              i{
+                font-size: 0.8rem;
+              }
+            }
+            .numbers{
+              margin-left: 0.8rem;
+              p{
+                font-size: 0.8rem;
+              }
+              span{
+                font-size: 0.6rem;
+              }
+            }
+          }
+
+          .tabs{
+            .tab-info{
+              
+              nav{
+                
+                .container{
+                  
+                  p{
+                    font-size: 0.8rem;
+                  }
+
+                  .dot{
+                    width: 0.59rem;
+                    height: 0.56rem;
+                  }
+
+                  :nth-child(3){
+                    margin-left:1.62rem;
+                    margin-right:1.63rem;
+
+                  }
+                  :nth-child(4){
+                    margin-left:2.89rem;
+                    margin-right:2.89rem;
+                  }
+
+                }
+              }
+              .text{
+                p{
+                  font-size: 0.8rem;
+                }
+              }
+            }
+
+            .tab-photo{
+              
+              nav{
+                
+                .container{
+                  
+                  p{
+                    font-size: 1.35rem;
+                  }
+
+                  .dot{
+                    width: 0.59rem;
+                    height: 0.56rem;
+                  }
+
+                  :nth-child(3){
+                    margin-left:1.62rem;
+                    margin-right:1.63rem;
+                  }
+                  :nth-child(4){
+                    margin-left:2.89rem;
+                    margin-right:2.89rem;
+                  }
+
+                }
+              }
+              .photos{
+                display: flex;
+                @include center;
+                img{
+                  height: 11.25rem;
+                  width: 8.44rem;
+                }
+              }
+            }
+          }
+
+          .btn-md{
+            color: #fff;
+          }
+
+        }
+      }
+    }
   }
+
 
   .modal-btn{
     font-size: 1.1rem;

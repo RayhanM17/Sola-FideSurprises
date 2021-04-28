@@ -674,7 +674,7 @@ a {
   // Pop up Css
 
   .infopopups{
-    z-index: 2;
+    z-index: 3;
     height: 100%;
     width: 100%;
     position: relative;
@@ -684,16 +684,16 @@ a {
       display: flex;
     }
     .popup{
-      z-index: 3;
+      z-index: 4;
       position:absolute;
-      top:1%;
+      top:0.5%;
       right: 25%;
       display: flex;
       @include center;
       background-color: #000;
       color: #fff;
       padding: 4rem;
-      width: 50%;
+      width: 60%;
       margin-bottom: 15rem;
 
       .container{
@@ -706,6 +706,7 @@ a {
           right: 14px;
           font-size:3rem;
           transform:rotate(45deg);
+          cursor: pointer;
         }
         .heading{
           h3{
@@ -858,7 +859,7 @@ a {
               img{
                 height: 200px;
                 width: 150px;
-              }
+              } 
             }
           }
         }
