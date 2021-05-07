@@ -954,7 +954,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
+  width: 30%;
   margin: 0;
 }
 
@@ -1695,6 +1695,9 @@ a {
   }
   #services main .heading {
     display: flex;
+  }
+  #services main .heading .container {
+    width: 50%;
   }
   #services main .services-boxes {
     margin: 8rem 0;
