@@ -295,6 +295,106 @@
     padding: 1.3rem;
   }
 
+  // About Page
+
+  #about{
+  
+    main{
+
+      .heading{
+        margin-top:2rem ;
+        .container{
+          width: 40%;
+        }
+      }
+  
+      .icons{
+        
+        .container{
+          width: 95%;
+          .icon1{
+            padding: 0 0.5rem;
+            img{
+              height: 3.5rem;
+              width: 3.5rem;
+            }
+            h3{
+              width: 90%;
+              font-size:20px;
+            }
+          }
+          .icon2{
+            padding: 0 0.5rem;
+            img{
+              height: 3.5rem;
+              width: 3.5rem;
+            }
+            h3{
+              width: 100%;
+              font-size:20px;
+            }
+          }
+          .icon3{
+            padding: 0 0.5rem;
+            img{
+              height: 3.5rem;
+              width: 3.5rem;
+            }
+            h3{
+              width: 80%;
+              font-size:20px;
+            }
+          }
+          .icon4{
+            padding: 0 0.5rem;
+            img{
+              height: 3.5rem;
+              width: 3.5rem;
+            }
+            h3{
+              width: 70%;
+              font-size:20px;
+            }
+          }
+          .icon5{
+            padding: 0 0.5rem;
+            img{
+              height: 3.5rem;
+              width: 3.5rem;
+            }
+            h3{
+              width: 65%;
+              font-size:20px;
+            }
+          }
+          
+        }
+      }
+  
+      .ainfo{
+        grid-gap: 3rem;
+        &-left{
+          
+          .text{
+            width: 90%;
+            h3{
+              font-size:20px;
+            }
+            p{
+              font-size:14px;
+            }
+          }
+        }
+        &-right{
+          
+          .img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
 
   
 
@@ -633,6 +733,127 @@
   .modal-btn{
     font-size: 1.2rem;
     padding: 1.3rem;
+  }
+
+  // About Page
+
+  #about{
+  
+    main{
+      
+      .heading{
+        margin-top: 3.5rem;
+        .container{
+          width: 100%;
+        }
+      }
+  
+      .videosection{
+        
+        .container{
+          width: 80%;
+        }
+      }
+  
+      .icons{
+        .container{
+          grid-template-columns: 1fr;
+          align-items: center;
+          justify-items: center;
+          .icon1{
+            border-right: none;
+            width: 45%;
+            border-bottom: $secondaryColor 1px solid;
+            padding: 1rem;
+            img{
+              
+            }
+            h3{
+              
+            }
+          }
+          .icon2{
+            width: 45%;
+            border-bottom: $secondaryColor 1px solid;
+            padding: 1rem;
+            img{
+              
+            }
+            h3{
+              
+            }
+          }
+          .icon3{
+            border-right: none;
+            border-left: none;
+            width: 45%;
+            border-bottom: $secondaryColor 1px solid;
+            padding: 1rem;
+            img{
+              
+            }
+            h3{
+              
+            }
+          }
+          .icon4{
+            border-right: none;
+            width: 45%;
+            border-bottom: $secondaryColor 1px solid;
+            padding: 1rem;
+            img{
+              
+            }
+            h3{
+              
+            }
+          }
+          .icon5{
+            width: 45%;
+            padding: 1rem;
+            img{
+              
+            }
+            h3{
+              
+            }
+          }
+          
+        }
+      }
+  
+      .ainfo{
+        
+        &-left{
+          
+          .container{
+            
+            h3{
+              
+            }
+            .line{
+              
+            }
+            p{
+              
+            }
+          }
+  
+          :nth-child(2){
+            
+          }
+        }
+        &-right{
+          
+          .container{
+            
+            img{
+              
+            }
+          }
+        }
+      }
+    }
   }
 
 }
@@ -1103,6 +1324,155 @@
   .modal-btn{
     font-size: 1.1rem;
     padding: 1.2rem;
+  }
+
+  #about{
+    
+    .navs{
+      .nav-widescreens{
+        .nav-links{
+          .nav-link{
+            a{
+
+            }
+          }      
+          .nav-logo{
+            
+            h1{
+              
+            }
+    
+            p{
+              
+              
+            }
+            
+          }
+        }
+      }
+      .nav-smallscreens{
+        
+        .nav-logo{
+          
+          h1{
+            
+          }
+        
+          p{
+            
+          }
+            
+        }
+        .menu-btn{
+          
+        }
+      }
+    }
+  
+    main{
+      
+      .heading{
+        
+        .container{
+          
+        }
+      }
+  
+      .videosection{
+        
+        .container{
+        
+          .video{
+            
+          }
+        }
+      }
+  
+      .icons{
+        
+        .container{
+          
+          .icon1{
+            
+            img{
+              
+            }
+            h3{
+              
+            }
+          }
+          .icon2{
+            
+            img{
+              
+            }
+            h3{
+              
+            }
+          }
+          .icon3{
+            
+            img{
+              
+            }
+            h3{
+              
+            }
+          }
+          .icon4{
+            
+            img{
+              
+            }
+            h3{
+              
+            }
+          }
+          .icon5{
+            
+            img{
+              
+            }
+            h3{
+              
+            }
+          }
+          
+        }
+      }
+  
+      .ainfo{
+        
+        &-left{
+          
+          .container{
+            
+            h3{
+              
+            }
+            .line{
+              
+            }
+            p{
+              
+            }
+          }
+  
+          :nth-child(2){
+            
+          }
+        }
+        &-right{
+          
+          .container{
+            
+            img{
+              
+            }
+          }
+        }
+      }
+    }
   }
 
 }

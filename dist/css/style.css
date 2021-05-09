@@ -1409,6 +1409,7 @@ a {
 }
 
 #about main .heading {
+  margin-top: 1.5rem;
   display: flex;
   align-content: flex-start;
   width: 100%;
@@ -1433,10 +1434,15 @@ a {
 }
 
 #about main .videosection .container {
-  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
 }
 
 #about main .videosection .container .video {
+  width: 100%;
+  height: 100%;
   outline: none;
   border: none;
 }
@@ -1450,10 +1456,10 @@ a {
 }
 
 #about main .icons .container {
-  width: 100%;
-  display: flex;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   align-items: center;
-  justify-content: center;
 }
 
 #about main .icons .container .icon1 {
@@ -1466,14 +1472,14 @@ a {
 }
 
 #about main .icons .container .icon1 img {
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   margin-bottom: 1rem;
 }
 
 #about main .icons .container .icon1 h3 {
   margin-top: 0.1rem;
-  width: 60%;
+  width: 70%;
   text-align: center;
   text-transform: none;
 }
@@ -1484,19 +1490,17 @@ a {
   justify-content: center;
   flex-direction: column;
   padding: 0 1rem;
-  border-right: #a9484d 1px solid;
 }
 
 #about main .icons .container .icon2 img {
-  margin-top: 0.7rem;
   height: 4rem;
   width: 4rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 #about main .icons .container .icon2 h3 {
-  margin-top: 1rem;
-  width: 60%;
+  margin-top: 0.1rem;
+  width: 80%;
   text-align: center;
   text-transform: none;
 }
@@ -1508,19 +1512,20 @@ a {
   flex-direction: column;
   padding: 0 1rem;
   border-right: #a9484d 1px solid;
+  border-left: #a9484d 1px solid;
 }
 
 #about main .icons .container .icon3 img {
-  height: 6.25rem;
-  width: 6.25rem;
-  margin-bottom: 0;
+  height: 4rem;
+  width: 4rem;
+  margin-bottom: 1rem;
 }
 
 #about main .icons .container .icon3 h3 {
-  width: 60%;
+  margin-top: 0.1rem;
+  width: 65%;
   text-align: center;
   text-transform: none;
-  margin-top: 0;
 }
 
 #about main .icons .container .icon4 {
@@ -1533,15 +1538,14 @@ a {
 }
 
 #about main .icons .container .icon4 img {
-  height: 3.75rem;
-  width: 3.75rem;
+  height: 4rem;
+  width: 4rem;
   margin-bottom: 1rem;
-  margin-top: 0.6rem;
 }
 
 #about main .icons .container .icon4 h3 {
-  margin-top: 0.85rem;
-  width: 60%;
+  margin-top: 0.1rem;
+  width: 65%;
   text-align: center;
   text-transform: none;
 }
@@ -1555,15 +1559,14 @@ a {
 }
 
 #about main .icons .container .icon5 img {
-  margin-top: 0.5rem;
-  height: 3.75rem;
-  width: 3.75rem;
+  height: 4rem;
+  width: 4rem;
   margin-bottom: 1rem;
 }
 
 #about main .icons .container .icon5 h3 {
-  margin-top: 0.85rem;
-  width: 60%;
+  margin-top: 0.1rem;
+  width: 65%;
   text-align: center;
   text-transform: none;
 }
@@ -1572,7 +1575,7 @@ a {
   background: #fff;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 8rem;
+  grid-gap: 4rem;
   padding: 4rem 1.5rem;
   width: 100%;
   overflow: hidden;
@@ -1580,19 +1583,23 @@ a {
 
 #about main .ainfo-left {
   display: flex;
-  align-self: center;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
-#about main .ainfo-left .container {
-  margin-left: 18rem;
+#about main .ainfo-left .text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 70%;
 }
 
-#about main .ainfo-left .container h3 {
+#about main .ainfo-left .text h3 {
   text-transform: none;
 }
 
-#about main .ainfo-left .container .line {
+#about main .ainfo-left .text .line {
   margin: 1.5rem 0;
   height: 1px;
   width: 12%;
@@ -1606,17 +1613,15 @@ a {
 #about main .ainfo-right {
   width: 100%;
   display: flex;
-  align-self: center;
+  align-items: center;
+  justify-content: center;
 }
 
-#about main .ainfo-right .container {
-  width: 100%;
-}
-
-#about main .ainfo-right .container img {
-  margin-left: 4rem;
-  width: 60%;
+#about main .ainfo-right .img {
+  overflow: hidden;
+  background-image: url("../img/Surprise Date.jpg");
   height: 44.8rem;
+  width: 80%;
 }
 
 @media screen and (min-width: 1171px) {
@@ -1812,6 +1817,85 @@ a {
   .modal-btn {
     font-size: 1.2rem;
     padding: 1.3rem;
+  }
+  #about main .heading {
+    margin-top: 2rem;
+  }
+  #about main .heading .container {
+    width: 40%;
+  }
+  #about main .icons .container {
+    width: 95%;
+  }
+  #about main .icons .container .icon1 {
+    padding: 0 0.5rem;
+  }
+  #about main .icons .container .icon1 img {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  #about main .icons .container .icon1 h3 {
+    width: 90%;
+    font-size: 20px;
+  }
+  #about main .icons .container .icon2 {
+    padding: 0 0.5rem;
+  }
+  #about main .icons .container .icon2 img {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  #about main .icons .container .icon2 h3 {
+    width: 100%;
+    font-size: 20px;
+  }
+  #about main .icons .container .icon3 {
+    padding: 0 0.5rem;
+  }
+  #about main .icons .container .icon3 img {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  #about main .icons .container .icon3 h3 {
+    width: 80%;
+    font-size: 20px;
+  }
+  #about main .icons .container .icon4 {
+    padding: 0 0.5rem;
+  }
+  #about main .icons .container .icon4 img {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  #about main .icons .container .icon4 h3 {
+    width: 70%;
+    font-size: 20px;
+  }
+  #about main .icons .container .icon5 {
+    padding: 0 0.5rem;
+  }
+  #about main .icons .container .icon5 img {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  #about main .icons .container .icon5 h3 {
+    width: 65%;
+    font-size: 20px;
+  }
+  #about main .ainfo {
+    grid-gap: 3rem;
+  }
+  #about main .ainfo-left .text {
+    width: 90%;
+  }
+  #about main .ainfo-left .text h3 {
+    font-size: 20px;
+  }
+  #about main .ainfo-left .text p {
+    font-size: 14px;
+  }
+  #about main .ainfo-right .img {
+    width: 100%;
   }
 }
 
@@ -2064,6 +2148,48 @@ a {
   .modal-btn {
     font-size: 1.2rem;
     padding: 1.3rem;
+  }
+  #about main .heading {
+    margin-top: 3.5rem;
+  }
+  #about main .heading .container {
+    width: 100%;
+  }
+  #about main .videosection .container {
+    width: 80%;
+  }
+  #about main .icons .container {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  #about main .icons .container .icon1 {
+    border-right: none;
+    width: 45%;
+    border-bottom: #a9484d 1px solid;
+    padding: 1rem;
+  }
+  #about main .icons .container .icon2 {
+    width: 45%;
+    border-bottom: #a9484d 1px solid;
+    padding: 1rem;
+  }
+  #about main .icons .container .icon3 {
+    border-right: none;
+    border-left: none;
+    width: 45%;
+    border-bottom: #a9484d 1px solid;
+    padding: 1rem;
+  }
+  #about main .icons .container .icon4 {
+    border-right: none;
+    width: 45%;
+    border-bottom: #a9484d 1px solid;
+    padding: 1rem;
+  }
+  #about main .icons .container .icon5 {
+    width: 45%;
+    padding: 1rem;
   }
 }
 
