@@ -842,34 +842,27 @@
       }
   
       .ainfo{
-        
+        grid-template-columns: 1fr;
+        @include center;
         &-left{
-          
-          .container{
-            
-            h3{
-              
-            }
+          grid-row: 3/4;
+          .text{
+            @include center;
+            width: 80%;
             .line{
-              
+              width: 15%;
             }
             p{
-              
+              text-align: center;
             }
-          }
-  
-          :nth-child(2){
-            
           }
         }
         &-right{
-          
-          .container{
             
-            img{
-              
-            }
+          .img{
+            height: 17rem;
           }
+          
         }
       }
     }
