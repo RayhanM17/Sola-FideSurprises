@@ -2160,36 +2160,85 @@ a {
   }
   #about main .icons .container {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
     align-items: center;
     justify-items: center;
   }
   #about main .icons .container .icon1 {
-    border-right: none;
-    width: 45%;
-    border-bottom: #a9484d 1px solid;
-    padding: 1rem;
+    width: 50%;
+    padding: 0rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: none;
+    margin: 1rem 0;
+  }
+  #about main .icons .container .icon1 img {
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+  #about main .icons .container .icon1 h3 {
+    width: 100%;
+    text-align: left;
   }
   #about main .icons .container .icon2 {
-    width: 45%;
-    border-bottom: #a9484d 1px solid;
-    padding: 1rem;
+    width: 70%;
+    padding: 0rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 0;
+  }
+  #about main .icons .container .icon2 img {
+    margin-left: 35%;
+    margin-bottom: 0;
+  }
+  #about main .icons .container .icon2 h3 {
+    width: 100%;
+    text-align: left;
   }
   #about main .icons .container .icon3 {
     border-right: none;
     border-left: none;
     width: 45%;
-    border-bottom: #a9484d 1px solid;
-    padding: 1rem;
+    padding: 0rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 0;
+  }
+  #about main .icons .container .icon3 img {
+    margin-bottom: 0;
+  }
+  #about main .icons .container .icon3 h3 {
+    width: 100%;
+    text-align: left;
   }
   #about main .icons .container .icon4 {
     border-right: none;
     width: 45%;
-    border-bottom: #a9484d 1px solid;
-    padding: 1rem;
+    padding: 0rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 0;
+  }
+  #about main .icons .container .icon4 img {
+    margin-bottom: 0;
+  }
+  #about main .icons .container .icon4 h3 {
+    width: 100%;
+    text-align: left;
   }
   #about main .icons .container .icon5 {
     width: 45%;
-    padding: 1rem;
+    padding: 0rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 0;
+  }
+  #about main .icons .container .icon5 img {
+    margin-bottom: 0;
+  }
+  #about main .icons .container .icon5 h3 {
+    width: 100%;
+    text-align: left;
   }
 }
 
