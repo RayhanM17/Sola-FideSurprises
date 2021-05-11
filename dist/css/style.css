@@ -1445,6 +1445,7 @@ a {
   height: 100%;
   outline: none;
   border: none;
+  background: #000;
 }
 
 #about main .icons {
