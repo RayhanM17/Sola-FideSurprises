@@ -2616,6 +2616,9 @@ a {
   #about main .videosection {
     margin: 8rem 0;
   }
+  #about main .videosection .container {
+    max-height: 14rem;
+  }
   #about main .videosection .container .video {
     font-size: 0.8rem;
   }
