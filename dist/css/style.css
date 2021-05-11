@@ -2589,4 +2589,84 @@ a {
     font-size: 1.1rem;
     padding: 1.2rem;
   }
+  #about .navs .nav-smallscreens {
+    height: 13vh;
+  }
+  #about .navs .nav-smallscreens .nav-logo h1 {
+    font-size: 2rem;
+    line-height: 0.83rem;
+  }
+  #about .navs .nav-smallscreens .nav-logo p {
+    font-size: 0.66rem;
+  }
+  #about .navs .nav-smallscreens .menu-btn {
+    top: 3rem;
+  }
+  #about .navs .nav-smallscreens .menu-btn .btn-line {
+    width: 18px;
+    height: 2px;
+  }
+  #about .navs .nav-smallscreens .menu-btn.close .btn-line {
+    width: 28px;
+    height: 3px;
+  }
+  #about main .heading .container p {
+    font-size: 0.8rem;
+  }
+  #about main .videosection {
+    margin: 8rem 0;
+  }
+  #about main .videosection .container .video {
+    font-size: 0.8rem;
+  }
+  #about main .icons .container .icon1 img {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+  #about main .icons .container .icon1 h3 {
+    font-size: 1.1rem;
+  }
+  #about main .icons .container .icon2 img {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+  #about main .icons .container .icon2 h3 {
+    font-size: 1.1rem;
+  }
+  #about main .icons .container .icon3 img {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+  #about main .icons .container .icon3 h3 {
+    font-size: 1.1rem;
+  }
+  #about main .icons .container .icon4 img {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+  #about main .icons .container .icon4 h3 {
+    font-size: 1.1rem;
+  }
+  #about main .icons .container .icon5 img {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+  #about main .icons .container .icon5 h3 {
+    font-size: 1.1rem;
+  }
+  #about main .ainfo {
+    grid-gap: 4rem;
+  }
+  #about main .ainfo-left .text h3 {
+    font-size: 1.1rem;
+  }
+  #about main .ainfo-left .text p {
+    font-size: 0.8rem;
+  }
+  #about main .ainfo-left :nth-child(2) {
+    margin-top: 5rem;
+  }
+  #about main .ainfo-right .container img {
+    height: 13.6rem;
+  }
 }

@@ -1341,42 +1341,29 @@
   #about{
     
     .navs{
-      .nav-widescreens{
-        .nav-links{
-          .nav-link{
-            a{
-
-            }
-          }      
-          .nav-logo{
-            
-            h1{
-              
-            }
-    
-            p{
-              
-              
-            }
-            
-          }
-        }
-      }
       .nav-smallscreens{
-        
+        height: 13vh;
         .nav-logo{
-          
           h1{
-            
+            font-size:2rem;
+            line-height: 0.83rem;
           }
-        
           p{
-            
+            font-size:0.66rem;
           }
-            
         }
         .menu-btn{
-          
+          top: 3rem;
+          .btn-line{
+            width:18px;
+            height:2px;
+          }
+          &.close{
+            .btn-line{
+              width:28px;
+              height: 3px;
+            }
+          }
         }
       }
     }
@@ -1386,16 +1373,18 @@
       .heading{
         
         .container{
-          
+          p{
+            font-size: 0.8rem;
+          }
         }
       }
   
       .videosection{
-        
+        margin: 8rem 0;
         .container{
         
           .video{
-            
+            font-size: 0.8rem;
           }
         }
       }
@@ -1403,50 +1392,49 @@
       .icons{
         
         .container{
-          
           .icon1{
-            
             img{
-              
+              height: 2.8rem;
+              width: 2.8rem;
             }
             h3{
-              
+              font-size: 1.1rem;
             }
           }
           .icon2{
-            
             img{
-              
+              height: 2.8rem;
+              width: 2.8rem;
             }
             h3{
-              
+              font-size: 1.1rem;
             }
           }
           .icon3{
-            
             img{
-              
+              height: 2.8rem;
+              width: 2.8rem;
             }
             h3{
-              
+              font-size: 1.1rem;
             }
           }
           .icon4{
-            
             img{
-              
+              height: 2.8rem;
+              width: 2.8rem;
             }
             h3{
-              
+              font-size: 1.1rem;
             }
           }
           .icon5{
-            
             img{
-              
+              height: 2.8rem;
+              width: 2.8rem;
             }
             h3{
-              
+              font-size: 1.1rem;
             }
           }
           
@@ -1454,24 +1442,21 @@
       }
   
       .ainfo{
-        
+        grid-gap: 4rem;
         &-left{
           
-          .container{
+          .text{
             
             h3{
-              
-            }
-            .line{
-              
+              font-size: 1.1rem;
             }
             p{
-              
+              font-size: 0.8rem;
             }
           }
   
           :nth-child(2){
-            
+            margin-top: 5rem;
           }
         }
         &-right{
@@ -1479,7 +1464,7 @@
           .container{
             
             img{
-              
+              height: 13.6rem;
             }
           }
         }
