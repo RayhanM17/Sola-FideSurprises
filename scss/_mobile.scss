@@ -758,64 +758,83 @@
       .icons{
         .container{
           grid-template-columns: 1fr;
+          grid-template-rows: repeat(5, 1fr);
           align-items: center;
           justify-items: center;
           .icon1{
-            border-right: none;
-            width: 45%;
-            border-bottom: $secondaryColor 1px solid;
-            padding: 1rem;
+            width: 50%;
+            padding: 0rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border: none;
+            margin: 1rem 0;
             img{
-              
+              margin-bottom: 0;
+              margin-left: 1rem;
             }
             h3{
-              
+              width: 100%;
+              text-align: left;
             }
           }
           .icon2{
-            width: 45%;
-            border-bottom: $secondaryColor 1px solid;
-            padding: 1rem;
+            width: 70%;
+            padding: 0rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 1rem 0;
             img{
-              
+              margin-left: 35%;
+              margin-bottom: 0;
             }
             h3{
-              
+              width: 100%;
+              text-align: left;
             }
           }
           .icon3{
             border-right: none;
             border-left: none;
             width: 45%;
-            border-bottom: $secondaryColor 1px solid;
-            padding: 1rem;
+            padding: 0rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 1rem 0;
             img{
-              
+              margin-bottom: 0;
             }
             h3{
-              
+              width: 100%;
+              text-align: left;
             }
           }
           .icon4{
             border-right: none;
             width: 45%;
-            border-bottom: $secondaryColor 1px solid;
-            padding: 1rem;
+            padding: 0rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 1rem 0;
             img{
-              
+              margin-bottom: 0;
             }
             h3{
-              
+              width: 100%;
+              text-align: left;
             }
           }
           .icon5{
             width: 45%;
-            padding: 1rem;
+            padding: 0rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 1rem 0;
             img{
-              
+              margin-bottom: 0;
             }
             h3{
-              
+              width: 100%;
+              text-align: left;
             }
           }
           
