@@ -2240,6 +2240,28 @@ a {
     width: 100%;
     text-align: left;
   }
+  #about main .ainfo {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  #about main .ainfo-left {
+    grid-row: 3/4;
+  }
+  #about main .ainfo-left .text {
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+  #about main .ainfo-left .text .line {
+    width: 15%;
+  }
+  #about main .ainfo-left .text p {
+    text-align: center;
+  }
+  #about main .ainfo-right .img {
+    height: 17rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
