@@ -84,7 +84,7 @@
 }
 
 .btn-md-light{
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   letter-spacing: 3px;
   padding: 0.9rem 1.3rem;
   color:#fff;
@@ -95,6 +95,7 @@
   border:none;
   cursor: pointer;
   outline: none;
+  display: inline-block;
 
   &:hover::before, &:hover::after{
     width:99%;

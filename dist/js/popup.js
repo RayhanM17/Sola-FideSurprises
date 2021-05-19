@@ -308,9 +308,9 @@ function addPopup2(e) {
   photo3.setAttribute('src', 'img/Proposal-1.jpg');
   photocontent.appendChild(photo3);
 
-  let orderbtn = document.createElement('button');
+  let orderbtn = document.createElement('a');
   orderbtn.className = 'btn-md-light';
-  orderbtn.setAttribute("href", "#");
+  orderbtn.setAttribute("href", "https://form.jotform.com/solafidebyabbi/breakfastorderform");
   orderbtn.innerText = 'Submit Order';
   containerOne.appendChild(orderbtn);
 
@@ -623,9 +623,9 @@ function addPopup4(e) {
   photo3.setAttribute('src', 'img/Proposal-1.jpg');
   photocontent.appendChild(photo3);
 
-  let orderbtn = document.createElement('button');
+  let orderbtn = document.createElement('a');
   orderbtn.className = 'btn-md-light';
-  orderbtn.setAttribute("href", "#");
+  orderbtn.setAttribute("href", "https://form.jotform.com/201651324671146");
   orderbtn.innerText = 'Submit Order';
   containerOne.appendChild(orderbtn);
 
