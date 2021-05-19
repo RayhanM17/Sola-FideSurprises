@@ -321,7 +321,7 @@ body .navs .nav-smallscreens .menu-btn {
 }
 
 .btn-md-light {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   letter-spacing: 3px;
   padding: 0.9rem 1.3rem;
   color: #fff;
@@ -332,6 +332,7 @@ body .navs .nav-smallscreens .menu-btn {
   border: none;
   cursor: pointer;
   outline: none;
+  display: inline-block;
 }
 
 .btn-md-light:hover::before, .btn-md-light:hover::after {
