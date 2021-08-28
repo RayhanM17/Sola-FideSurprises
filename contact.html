@@ -65,20 +65,41 @@
         <p>This is how you can reach us...</p>
       </div>
     </div>
-    <div class="boxes">
-        <div class="info-box">
-          <i class="fas fa-envelope"></i>
-          <p>example.example@example.com</p>
-        </div>
-        <div class="info-box">
-          <i class="fas fa-phone-alt"></i>
-          <p>(555)-555-5555</p>
-        </div>
-        <div class="info-box">
-          <i class="fas fa-map-marked-alt"></i>
-          <p>50 Main st Hollywood FL 33033</p>
-        </div>
-    </div>
+    <form id="contact-form" class="contact-form">
+      <div class="form-group">
+        <input type="text" class="form-control" id="firstname" required autocomplete="off">
+        <label for="name" class="label-name">
+          <span class="content-name">First Name</span>
+        </label>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="last-name" required autocomplete="off">
+        <label for="name" class="label-name">
+          <span class="content-name">Last Name</span>
+        </label>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" required autocomplete="off">
+        <label for="name" class="label-name">
+          <span class="content-name">Email</span>
+        </label>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="phone" required autocomplete="off">
+        <label for="name" class="label-name">
+          <span class="content-name">Phone</span>
+        </label>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="message" required autocomplete="off">
+        <label for="name" class="label-name">
+          <span class="content-name">Message</span>
+        </label>
+      </div>
+      <div class="container">
+        <input type="submit" value="Submit" class="btn-submit">
+      </div>
+    </form>
   </main>
 
   <footer class="footer">
