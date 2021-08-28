@@ -34,19 +34,4 @@ function toggleMenu() {
   }
 }
 
-//Mobile Autoplay fix
-
-// const videoElement = document.querySelectorAll(video);
-
-// videoElement.addEventListener('suspend', () => {
-
-// });
-
-// videoElement.addEventListener('play', () => {
-
-// });
-
-
-
-
 

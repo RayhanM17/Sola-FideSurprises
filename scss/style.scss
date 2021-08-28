@@ -1,6 +1,7 @@
 @import 'config';
 @import 'menu';
 @import 'button';
+@import 'form';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,700&display=swap');
 
 *{
@@ -486,6 +487,7 @@ a {
     .heading{
       display: flex;
       align-items: flex-start;
+      margin: 3rem;
       .container{
         display: flex;
         @include center;
@@ -494,30 +496,9 @@ a {
         width: 50%;
       }
     }
-    .boxes{
+    .contact-form .container{
       display: flex;
-      display: flex;
-      flex-direction: column;
       @include center;
-      flex-wrap: wrap;
-      margin-top:6rem;
-        .info-box{
-          display: flex;
-          @include center;
-          font-size:1.5rem;
-          border: 0.02rem #000 solid;
-          padding: 1.5rem 2.5rem;
-          margin-bottom: 3rem;
-          i{
-            color:#000;
-            min-width: 35px;
-            min-height: 35px;
-            margin:0;
-            margin-right: 2rem;            
-            margin-top: 0.5rem;         
-
-          }
-        }
     }
   }
 }
