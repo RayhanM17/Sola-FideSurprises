@@ -78,3 +78,37 @@
     }
   }
 }
+
+// alert css
+
+.is-invalid{
+  color: red;
+  border: red 2px solid;
+}
+.feedback {
+  display: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @include center;
+
+  .alert{
+    width: 40%;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .success, .error {
+    color: white;
+    padding: 5px;
+    margin: 5px 0 15px 0;
+  }
+
+  .success{
+    background: green;
+  }
+
+  .error{
+    background: red;
+  }
+}
