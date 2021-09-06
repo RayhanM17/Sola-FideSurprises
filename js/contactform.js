@@ -21,8 +21,10 @@ const UserVal = (function(){
 
       if(!re.test(firstN.value)) {
         firstN.classList.add('is-invalid');
+        firstN.parentElement.nextElementSibling.style.display = 'block';
       } else {
         firstN.classList.remove('is-invalid');
+        firstN.parentElement.nextElementSibling.style.display = 'none';
       }
     },
     validateLN: function() {
@@ -31,8 +33,10 @@ const UserVal = (function(){
 
       if(!re.test(lastN.value)) {
         lastN.classList.add('is-invalid');
+        lastN.parentElement.nextElementSibling.style.display = 'block';
       } else {
         lastN.classList.remove('is-invalid');
+        lastN.parentElement.nextElementSibling.style.display = 'none';
       }
     },
     validateEmail: function() {
@@ -41,8 +45,10 @@ const UserVal = (function(){
 
       if(!re.test(email.value)) {
         email.classList.add('is-invalid');
+        email.parentElement.nextElementSibling.style.display = 'block';
       } else {
         email.classList.remove('is-invalid');
+        email.parentElement.nextElementSibling.style.display = 'none';
       }
     },
     validatePhone: function() {
@@ -51,8 +57,10 @@ const UserVal = (function(){
 
       if(!re.test(phone.value)) {
         phone.classList.add('is-invalid');
+        phone.parentElement.nextElementSibling.style.display = 'block';
       } else {
         phone.classList.remove('is-invalid');
+        phone.parentElement.nextElementSibling.style.display = 'none';
       }
     },
     validateMessage: function() {
@@ -61,8 +69,10 @@ const UserVal = (function(){
 
       if(!re.test(msg.value)) {
         msg.classList.add('is-invalid');
+        msg.parentElement.nextElementSibling.style.display = 'block';
       } else {
         msg.classList.remove('is-invalid');
+        msg.parentElement.nextElementSibling.style.display = 'none';
       }
     },
     validateAll: function() {
@@ -116,6 +126,11 @@ const UserVal = (function(){
       document.querySelector(UISelectors.emailIn).value = '';
       document.querySelector(UISelectors.phoneIn).value = '';
       document.querySelector(UISelectors.msgIn).value = '';
+
+      const inputs = document.querySelectorAll('input');
+      inputs.forEach(el => {
+        el.classList.remove('blurred');
+      })
     }
   }
 })();
@@ -183,6 +198,19 @@ const App = (function(UserVal, HTTP) {
     document.querySelector(UISelectors.emailIn).addEventListener('blur', UserVal.validateEmail);
     document.querySelector(UISelectors.phoneIn).addEventListener('blur', UserVal.validatePhone);
     document.querySelector(UISelectors.msgIn).addEventListener('blur', UserVal.validateMessage);
+
+    // Input focus event listener
+    const inputs = document.querySelectorAll('input');
+
+    inputs.forEach(el => {
+      el.addEventListener('blur', e => {
+        if(e.target.value.length > 0) {
+          e.target.classList.add('blurred');
+        } else {
+          e.target.classList.remove('blurred');
+        }
+      })
+    });
 
     // Submit Event listener
     document.querySelector(UISelectors.form).addEventListener('submit', function(e) {
